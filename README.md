@@ -9,7 +9,6 @@ The original Helper was made by weibo user moelynn, then translated into English
 ## Download
 1. Download the zip/rar linked above
 2. Extract the zip/rar somewhere (the zip/rar contains a folder named 'Touken Ranbu Helper')
-3. Download the **Lite-PATCH**, extract the zip and paste its content into the original 'Touken Ranbu Helper' folder (replace existing files)
 
 ## Load
 1. Open Google Chrome
