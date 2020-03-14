@@ -37,3 +37,53 @@ The original Helper was made by weibo user moelynn, then translated into English
 
 
 ### Check the [Touken-Ranbu Fandom](https://touken-ranbu.fandom.com/wiki/Touken_Ranbu_Helper) for more info.
+```
+src─┐
+    │  manifest.json
+    │
+    ├─assets
+    │  │  bgs.png                     
+    │  │  icon.png                    
+    │  │  icon_128.png                
+    │  │  sakura.png                  
+    │  └─sword
+    |     sword_id.png          
+    ├─devtools
+    │  │  devtools.html
+    │  │  devtools.js
+    │  │
+    │  └─panel
+    │      │  index.html           
+    │      │
+    │      ├─app
+    │      │      app.js          
+    │      │      config.js       
+    │      │      data.js         
+    │      │      define.js       
+    │      │      event.js        
+    │      │      inject.js       
+    │      │      log.js          
+    │      │      parse.js        
+    │      │      router.js       
+    │      │      store.js        
+    │      │      view.js         
+    │      │
+    │      ├─assets
+    │      │      main.css
+    ├─popup
+    │      container.html
+    │      popup.coffee
+    │      popup.html
+    │      resize.coffee
+    └─thirdparty
+            aes.js
+            FileSaver.js
+            jquery.js
+            livereload.js
+            lodash.js
+            pad-nopadding-min.js
+            vue.js
+```
+
+## License
+CC0 1.0 Universal
