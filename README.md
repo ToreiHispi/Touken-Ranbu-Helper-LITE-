@@ -37,6 +37,7 @@ The original Helper was made by weibo user moelynn, then translated into English
 
 
 ### Check the [Touken-Ranbu Fandom](https://touken-ranbu.fandom.com/wiki/Touken_Ranbu_Helper) for more info.
+
 ```
 src─┐
     │  manifest.json
