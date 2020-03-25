@@ -1635,7 +1635,7 @@
       "equip": 2,
 	  "area": 1,
       "upgrade": 20,
-      "symbol": 2
+      "symbol": 1
 	},
 	"173": {
 	  "name": "Kuwana Gou K.",
@@ -1717,17 +1717,6 @@
 	"180": {
       "name": "Sanchoumou",
       "id": 180,
-      "rarity": 5,
-      "type": 2,
-      "group": 18,
-      "equip": 3,
-      "area": 1,
-      "upgrade": 25,
-      "symbol": 1
-    },
-	"181": {
-      "name": "Sanchoumou K.",
-      "id": 181,
       "rarity": 5,
       "type": 2,
       "group": 18,
@@ -2355,8 +2344,8 @@
       "lv": 5,
       "need": [],
       "get": {
-        "player_exp": "5(10)",
-        "sword_exp": "5",
+        "player_exp": "10(20)",
+        "sword_exp": "25",
         "bill": null,
         "bonemeal": null,
         "charcoal": "10(15)",
@@ -2376,8 +2365,8 @@
       "lv": "10",
       "need": [7],
       "get": {
-        "player_exp": "15(30)",
-        "sword_exp": "15",
+        "player_exp": "20(40)",
+        "sword_exp": "70",
         "bill": null,
         "bonemeal": null,
         "charcoal": null,
@@ -2397,8 +2386,8 @@
       "lv": "20",
       "need": [4],
       "get": {
-        "player_exp": "10(20)",
-        "sword_exp": "10",
+        "player_exp": "20(40)",
+        "sword_exp": "65",
         "bill": null,
         "bonemeal": null,
         "charcoal": "20(30)",
@@ -2418,8 +2407,8 @@
       "lv": "30",
       "need": [4, 7],
       "get": {
-        "player_exp": "30(60)",
-        "sword_exp": "30",
+        "player_exp": "35(70)",
+        "sword_exp": "135",
         "bill": null,
         "bonemeal": null,
         "charcoal": null,
@@ -2439,15 +2428,15 @@
       "lv": "50",
       "need": [4],
       "get": {
-        "player_exp": "50(100)",
-        "sword_exp": "50",
+        "player_exp": "55(110)",
+        "sword_exp": "285",
         "bill": null,
         "bonemeal": null,
         "charcoal": null,
         "steel": null,
         "coolant": "90(135)",
         "file": "90(135)",
-        "money": "小判箱(小)"
+        "money": "Koban Box(S)"
       }
     },
     "6": {
@@ -2461,14 +2450,14 @@
       "need": [5],
       "get": {
         "player_exp": "100(200)",
-        "sword_exp": "120",
+        "sword_exp": "570",
         "bill": null,
         "bonemeal": null,
         "charcoal": null,
         "steel": "50(75)",
         "coolant": null,
         "file": "250(375)",
-        "money": "小判箱(小)"
+        "money": "Koban Box(S)"
       }
     },
     "7": {
@@ -2482,7 +2471,7 @@
       "need": [2],
       "get": {
         "player_exp": "70(140)",
-        "sword_exp": "70",
+        "sword_exp": "380",
         "bill": "1",
         "bonemeal": null,
         "charcoal": "120(180)",
@@ -2502,8 +2491,8 @@
       "lv": "100",
       "need": [2, 5],
       "get": {
-        "player_exp": "85(170)",
-        "sword_exp": "100",
+        "player_exp": "90(180)",
+        "sword_exp": "585",
         "bill": null,
         "bonemeal": "1",
         "charcoal": null,
@@ -2524,7 +2513,7 @@
       "need": [],
       "get": {
         "player_exp": "130(260)",
-        "sword_exp": "135",
+        "sword_exp": "760",
         "bill": "1",
         "bonemeal": null,
         "charcoal": "130(195)",
@@ -2544,8 +2533,8 @@
       "lv": "120",
       "need": [],
       "get": {
-        "player_exp": "100(200)",
-        "sword_exp": "110",
+        "player_exp": "105(210)",
+        "sword_exp": "700",
         "bill": null,
         "bonemeal": "1",
         "charcoal": null,
@@ -2565,15 +2554,15 @@
       "lv": "130",
       "need": [1],
       "get": {
-        "player_exp": "300(600)",
-        "sword_exp": "260",
+        "player_exp": "315(630)",
+        "sword_exp": "2325",
         "bill": null,
         "bonemeal": null,
         "charcoal": "200(300)",
         "steel": null,
         "coolant": "500(750)",
         "file": null,
-        "money": "小判箱(中)"
+        "money": "Koban Box(M)"
       }
     },
     "12": {
@@ -2586,8 +2575,8 @@
       "lv": "140",
       "need": [],
       "get": {
-        "player_exp": "250(500)",
-        "sword_exp": "220",
+        "player_exp": "255(510)",
+        "sword_exp": "1860",
         "bill": null,
         "bonemeal": "1",
         "charcoal": null,
@@ -2607,8 +2596,8 @@
       "lv": "150",
       "need": [],
       "get": {
-        "player_exp": "75(150)",
-        "sword_exp": "75",
+        "player_exp": "80(160)",
+        "sword_exp": "540",
         "bill": null,
         "bonemeal": null,
         "charcoal": null,
@@ -2628,15 +2617,15 @@
       "lv": "180",
       "need": [],
       "get": {
-        "player_exp": "160(320)",
-        "sword_exp": "155",
+        "player_exp": "170(340)",
+        "sword_exp": "1345",
         "bill": null,
         "bonemeal": null,
         "charcoal": "100(150)",
         "steel": "380(570)",
         "coolant": null,
         "file": null,
-        "money": "小判箱(中)"
+        "money": "Koban Box(M)"
       }
     },
     "15": {
@@ -2649,8 +2638,8 @@
       "lv": "200",
       "need": [],
       "get": {
-        "player_exp": "350(700)",
-        "sword_exp": "310",
+        "player_exp": "385(770)",
+        "sword_exp": "3600",
         "bill": null,
         "bonemeal": null,
         "charcoal": "100(150)",
@@ -2671,14 +2660,14 @@
       "need": [],
       "get": {
         "player_exp": "200(400)",
-        "sword_exp": "170",
+        "sword_exp": "1610",
         "bill": null,
         "bonemeal": null,
         "charcoal": "150(225)",
         "steel": null,
         "coolant": null,
         "file": "400(600)",
-        "money": "小判箱(大)"
+        "money": "Koban Box(L)"
       }
     },
     "17": {
@@ -2691,8 +2680,8 @@
       "lv": "240",
       "need": [],
       "get": {
-        "player_exp": "340(680)",
-        "sword_exp": "310",
+        "player_exp": "380(760)",
+        "sword_exp": "3220",
         "bill": null,
         "bonemeal": "1",
         "charcoal": "250(375)",
@@ -2712,15 +2701,15 @@
       "lv": "260",
       "need": [6],
       "get": {
-        "player_exp": "530(1060)",
-        "sword_exp": "460",
+        "player_exp": "560(1020)",
+        "sword_exp": "4830",
         "bill": null,
         "bonemeal": "1",
         "charcoal": "200(300)",
         "steel": "500(750)",
         "coolant": "300(450)",
         "file": null,
-        "money": "小判箱(大)"
+        "money": "Koban Box(L)"
       }
     },
     "19": {
@@ -2733,15 +2722,15 @@
       "lv": "280",
       "need": [3],
       "get": {
-        "player_exp": "430(860)",
-        "sword_exp": "385",
+        "player_exp": "475(950)",
+        "sword_exp": "4500",
         "bill": null,
         "bonemeal": null,
         "charcoal": "350(525)",
         "steel": "200(300)",
         "coolant": "100(150)",
         "file": "250(375)",
-        "money": "小判箱(大)"
+        "money": "Koban Box(L)"
       }
     },
     "20": {
@@ -2754,15 +2743,15 @@
       "lv": "300",
       "need": [-1],
       "get": {
-        "player_exp": "700(1400)",
-        "sword_exp": "610",
+        "player_exp": "745(1490)",
+        "sword_exp": "7200",
         "bill": "3",
         "bonemeal": null,
         "charcoal": "300(450)",
         "steel": "400(600)",
         "coolant": "500(750)",
         "file": null,
-        "money": "小判箱(大)"
+        "money": "Koban Box(L)"
       }
     }
   };
