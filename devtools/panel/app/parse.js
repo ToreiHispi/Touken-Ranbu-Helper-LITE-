@@ -78,16 +78,16 @@
     })(this));
     this.data['sword']['data'] = branch;
     this.data['sword']['last_update'] = Date.now();
-    exports.tohken.parse.view.call(this, 'party');
+	exports.tohken.parse.view.call(this, 'party');
     return 'done';
   };
   exports.tohken.parse.party = function(party) {
     if (!this.data['party']['filling']) {
       this.data['party']['filling'] = true;
     }
-    this.data['party']['data'] = party;
+	this.data['party']['data'] = party;
     this.data['party']['last_update'] = Date.now();
-    exports.tohken.parse.view.call(this, 'party');
+	exports.tohken.parse.view.call(this, 'party');
     return 'done';
   };
   exports.tohken.parse.equip = function(equip) {
@@ -141,7 +141,7 @@
     return 'done';
   };
   exports.tohken.parse.battle = function(battle) {
-    var asia, europe, leader, notify, party, player, preupload, result, target;
+    var rare, srare, ev, leader, notify, party, player, preupload, result, target;
     party = {};
     leader = null;
     _.forEach(battle.player.party, function(v, k) {
@@ -277,8 +277,9 @@
         value: result['get_sword_id']
       });
     }
-    asia = [3, 5, 7, 9, 11, 13, 15, 17, 25, 31, 33, 35, 37, 43, 51, 53, 55, 57, 59, 63, 65, 67, 69, 71, 75, 77, 79, 103, 105, 107, 112, 118, 120, 124, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170];
-    europe = [3, 5, 9, 11, 13, 15, 17, 31, 33, 35, 37, 43, 51, 53, 57, 63, 67, 69, 71, 75, 77, 103, 105, 107, 112, 120, 124, 136, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170];
+    rare = [7, 25, 55, 59, 65, 79, 118, 130, 132, 134, 138];
+    srare = [3, 5, 9, 11, 13, 15, 17, 31, 33, 35, 37, 43, 51, 53, 57, 63, 67, 69, 71, 77, 103, 105, 107, 112, 120, 124, 126, 136, 140, 144, 150];
+	ev = [21, 75, 142, 146, 148, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180];
     _.forEach(notify, (function(_this) {
       return function(n) {
         var has;
@@ -356,7 +357,7 @@
               return;
             }
             if (_this.config['notify_getnew'] === 1) {
-              has = _.findIndex(asia, function(i) {
+              has = _.findIndex(rare.concat(srare, ev), function(i) {
                 if (i === parseInt(n['sword'])) {
                   return true;
                 }
@@ -366,7 +367,7 @@
               }
             }
             if (_this.config['notify_getnew'] === 2) {
-              has = _.findIndex(europe, function(i) {
+              has = _.findIndex(srare.concat(ev), function(i) {
                 if (i === parseInt(n['sword'])) {
                   return true;
                 }

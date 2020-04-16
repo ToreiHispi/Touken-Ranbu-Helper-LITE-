@@ -1724,7 +1724,29 @@
       "area": 1,
       "upgrade": 25,
       "symbol": 1
-    }
+    },
+	"182": {
+		"name": "NEW SWORD 1",
+		"id": 182,
+		"rarity": 0,
+		"type": 0,
+		"group": 0,
+		"equip": 3,
+		"area": 0,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"184": {
+		"name": "NEW SWORD 2",
+		"id": 184,
+		"rarity": 0,
+		"type": 0,
+		"group": 0,
+		"equip": 3,
+		"area": 0,
+		"upgrade": 25,
+		"symbol": 1
+	}
   };
   exports.tohken.define.equiptype = {
     "1": "Catapult",

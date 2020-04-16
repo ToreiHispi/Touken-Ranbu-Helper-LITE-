@@ -37,7 +37,7 @@
             parse.resource.call(_this, data['resource']);
             parse.equip.call(_this, data['equip']);
             parse.sword.call(_this, data['sword']);
-            parse.party.call(_this, data['party']);
+            //parse.party.call(_this, data['party']);
             parse.forge.call(_this, data['forge']);
             return exports.tohken.parse.view.call(_this, 'resource');
           };
@@ -71,8 +71,8 @@
         return this.parser(request, (function(_this) {
           return function(data) {
             parse.resource.call(_this, data['resource']);
-            parse.sword.call(_this, data['sword']);
-            parse.party.call(_this, data['party']);
+            //parse.sword.call(_this, data['sword']);
+            //parse.party.call(_this, data['party']);
             parse.repair.call(_this, data['repair']);
             exports.tohken.parse.view.call(_this, 'resource');
             return exports.tohken.parse.check_repair.call(_this, data['repair']);
