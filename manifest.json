@@ -1,7 +1,7 @@
 {
   "name": "Tohken Ranbu Helper(Beta)",
   "manifest_version": 2,
-  "version": "1.1",
+  "version": "1.4",
   "devtools_page": "devtools/devtools.html",
   "content_security_policy": "default-src 'self' chrome-extension-resource: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval';  connect-src *; frame-src *;",
   "web_accessible_resources":
@@ -21,5 +21,6 @@
     "notifications",
     "alarms",
     "tabs"
-  ]
+  ],
+  "description": "A simple browser extension that displays sword teams, forge, repairs, and equip information."
 }

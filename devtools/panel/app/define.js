@@ -33,7 +33,8 @@
     "15": "Kotetsu...?",
     "16": "Masamune",
     "17": "Gou",
-	"18": "Fukuoka Ichimonji"
+	"18": "Fukuoka Ichimonji",
+	"19": "Bungonokuni Yukihira"
   };
   exports.tohken.define.area = {
     "1": "Short",
@@ -1726,26 +1727,37 @@
       "symbol": 1
     },
 	"182": {
-		"name": "NEW SWORD 1",
+		"name": "Kokindenjunotachi",
 		"id": 182,
-		"rarity": 0,
-		"type": 0,
-		"group": 0,
+		"rarity": 4,
+		"type": 2,
+		"group": 19,
 		"equip": 3,
-		"area": 0,
-		"upgrade": 20,
+		"area": 1,
+		"upgrade": 25,
 		"symbol": 1
 	},
 	"184": {
-		"name": "NEW SWORD 2",
+		"name": "Jizou",
 		"id": 184,
-		"rarity": 0,
-		"type": 0,
-		"group": 0,
-		"equip": 3,
-		"area": 0,
-		"upgrade": 25,
+		"rarity": 2,
+		"type": 5,
+		"group": 19,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
 		"symbol": 1
+	},
+	"185": {
+		"name": "Jizou K.",
+		"id": 185,
+		"rarity": 3,
+		"type": 5,
+		"group": 19,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 4
 	}
   };
   exports.tohken.define.equiptype = {
