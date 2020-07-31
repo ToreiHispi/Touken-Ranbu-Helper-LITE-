@@ -51,7 +51,7 @@
         if (fatigue >= 49) {
           return;
         }
-        last = Date.parse(sword['recovered_at'] + " GMT+0900");
+        last = Date.parse(sword['recovered_at'] + "+0900");
         now = Date.now();
         time = now - last;
         vfatigue = Math.floor(time / 60000);

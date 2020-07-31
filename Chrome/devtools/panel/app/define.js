@@ -1758,7 +1758,51 @@
 		"area": 1,
 		"upgrade": 20,
 		"symbol": 4
-	}
+	},
+    "186": {
+      "name": "Chiganemaru",
+      "id": 186,
+      "rarity": 2,
+      "type": 4,
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "187": {
+      "name": "Chiganemaru K.",
+      "id": 187,
+      "rarity": 3,
+      "type": 4,
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "188": {
+      "name": "New Sword 188",
+      "id": 188,
+      "rarity": 1,
+      "type": 1,
+      "group": 1,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "189": {
+      "name": "New Sword 189 K.",
+      "id": 189,
+      "rarity": 2,
+      "type": 1,
+      "group": 1,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    }
   };
   exports.tohken.define.equiptype = {
     "1": "Catapult",

@@ -108,7 +108,7 @@
     _.forEach(forge, (function(_this) {
       return function(v, k) {
         var has, id, time;
-        time = Date.parse(v['finished_at'] + " GMT+0900");
+        time = Date.parse(v['finished_at'] + "+0900");
         id = v['slot_no'] + "-" + time;
         has = _.has(_this.data['logs']['forge'], id);
         if (!has) {
@@ -175,7 +175,7 @@
     result['soldier'] = battle.result.player['soldier'];
     result['soldier_max'] = battle.result.player['soldier_max'];
     result['get_exp'] = battle.result.player['get_exp'];
-    result['time'] = Date.parse(battle['now'] + " GMT+0900");
+    result['time'] = Date.parse(battle['now'] + "+0900");
     result['id'] = result['battle_party'] + "-" + result['battle_episode'] + "-" + result['battle_field'] + "-" + result['battle_pos'] + "-" + result['time'];
     player = {};
     player['level'] = battle.result.player['level'];
@@ -277,9 +277,13 @@
         value: result['get_sword_id']
       });
     }
+    //Rare/Uncommon Swords
     rare = [7, 25, 55, 59, 65, 79, 118, 130, 132, 134, 138];
+	//Super Rare Swords
     srare = [3, 5, 9, 11, 13, 15, 17, 31, 33, 35, 37, 43, 51, 53, 57, 63, 67, 69, 71, 77, 103, 105, 107, 112, 120, 124, 126, 136, 140, 144, 150];
-	ev = [21, 75, 142, 146, 148, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184];
+	//Limited-Time/Event only Swords
+	ev = [21, 75, 142, 146, 148, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188];
+	
     _.forEach(notify, (function(_this) {
       return function(n) {
         var has;
@@ -354,9 +358,11 @@
             break;
           case 'get':
             if (_this.config['notify_getnew'] === 0) {
+			  //No Drop
               return;
             }
             if (_this.config['notify_getnew'] === 1) {
+			  //Notify on Rare or higher Drops
               has = _.findIndex(rare.concat(srare, ev), function(i) {
                 if (i === parseInt(n['sword'])) {
                   return true;
@@ -367,6 +373,7 @@
               }
             }
             if (_this.config['notify_getnew'] === 2) {
+			  //Notify on Super Rare or higher(?) Drops
               has = _.findIndex(srare.concat(ev), function(i) {
                 if (i === parseInt(n['sword'])) {
                   return true;
@@ -618,7 +625,7 @@
         var cmsg, context, earlier, f, fd, finish, message, title;
         f = v['finished_at'];
         if (f !== null) {
-          finish = Date.parse(f + " GMT+0900");
+          finish = Date.parse(f + "+0900");
           fd = new Date();
           fd.setTime(finish);
           earlier = 0;
@@ -676,7 +683,7 @@
         f = v['finished_at'];
 		w = (_this.data['sword']['data'][v['sword_serial_id']] ? _this.data['sword']['data'][v['sword_serial_id']] : "No sword found!");		
         if (f !== null) {
-          finish = Date.parse(f + " GMT+0900");
+          finish = Date.parse(f + "+0900");
           fd = new Date();
           fd.setTime(finish);
           earlier = 0;

@@ -44,7 +44,7 @@
       conquest_time: function(finished_at) {
         var d;
         d = new Date();
-        d.setTime(Date.parse(finished_at + " GMT+0900"));
+        d.setTime(Date.parse(finished_at + "+0900"));
         return d.toTimeString().slice(0, 8);
       },
       e2n: function(equip_id) {
@@ -65,7 +65,7 @@
       tt2lt: function(time) {
         var date, day, hour, minute, month, second, year;
         date = new Date();
-        date.setTime(Date.parse(time + " GMT+0900"));
+        date.setTime(Date.parse(time + "+0900"));
         year = date.getFullYear();
         month = (date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
         day = date.getDate() < 10 ? "0" + (date.getDate()) : date.getDate();

@@ -49,7 +49,7 @@
             if (!_this.data['forge']['filling']) {
               _this.data['forge']['filling'] = true;
             }
-            time = Date.parse(data['finished_at'] + " GMT+0900");
+            time = Date.parse(data['finished_at'] + "+0900");
             id = data['slot_no'] + "-" + time;
             forge = {};
             forge['slot_no'] = data['slot_no'];
