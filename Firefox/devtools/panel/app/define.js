@@ -1782,25 +1782,14 @@
       "symbol": 3
     },
     "188": {
-      "name": "New Sword 188",
+      "name": "Nikkou Ichimonji",
       "id": 188,
-      "rarity": 1,
-      "type": 1,
-      "group": 1,
-      "equip": 1,
+      "rarity": 4,
+      "type": 2,
+      "group": 18,
+      "equip": 3,
       "area": 1,
-      "upgrade": 20,
-      "symbol": 1
-    },
-    "189": {
-      "name": "New Sword 189 K.",
-      "id": 189,
-      "rarity": 2,
-      "type": 1,
-      "group": 1,
-      "equip": 1,
-      "area": 1,
-      "upgrade": 20,
+      "upgrade": 25,
       "symbol": 1
     }
   };
