@@ -1,358 +1,1751 @@
 define = {
-	3: {
-		"name": "Mikazuki Munechika",
-		"type": "Tachi"
-	},
-	5: {
-		"name": "Kogitsunemaru",
-		"type": "Tachi"
-	},
-	7: {
-		"name": "Ishikirimaru",
-		"type": "Oodachi"
-	},
-	9: {
-		"name": "Iwatooshi",
-		"type": "Naginata"
-	},
-	11: {
-		"name": "Imanotsurugi",
-		"type": "Tantou"
-	},
-	12: {
-		"name": "Imanotsurugi Kiwame",
-		"type": "Tantou"
-	},
-	13: {
-		"name": "Oodenta Mitsuyo",
-		"type": "Tachi"
-	},
-	15: {
-		"name": "Sohayanotsurugi",
-		"type": "Tachi"
-	},
-	17: {
-		"name": "Juzumaru Tsunetsugu",
-		"type": "Tachi"
-	},
-	19: {
-		"name": "Nikkari Aoe",
-		"type": "Wakizashi"
-	},
-	20: {
-		"name": "Nikkari Aoe",
-		"type": "Wakizashi"
-	},
-	23: {
-		"name": "Nakigitsune",
-		"type": "Uchigatana"
-	},
-	25: {
-		"name": "Ichigo Hitofuri",
-		"type": "Tachi"
-	},
-	27: {
-		"name": "Namazuo Toushirou",
-		"type": "Wakizashi"
-	},
-	28: {
-		"name": "Namazuo Toushirou",
-		"type": "Wakizashi"
-	},
-	29: {
-		"name": "Honebami Toushirou",
-		"type": "Wakizashi"
-	},
-	30: {
-		"name": "Honebami Toushirou",
-		"type": "Wakizashi"
-	},
-	31: {
-		"name": "Hirano Toushirou",
-		"type": "Tantou"
-	},
-	32: {
-		"name": "Hirano Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	33: {
-		"name": "Atsushi Toushirou",
-		"type": "Tantou"
-	},
-	34: {
-		"name": "Atsushi Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	35: {
-		"name": "Gotou Toushirou",
-		"type": "Tantou"
-	},
-	36: {
-		"name": "Gotou Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	37: {
-		"name": "Shinano Toushirou",
-		"type": "Tantou"
-	},
-	38: {
-		"name": "Shinano Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	39: {
-		"name": "Maeda Toushirou",
-		"type": "Tantou"
-	},
-	40: {
-		"name": "Maeda Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	41: {
-		"name": "Akita Toushirou",
-		"type": "Tantou"
-	},
-	42: {
-		"name": "Akita Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	43: {
-		"name": "Hakata Toushirou",
-		"type": "Tantou"
-	},
-	44: {
-		"name": "Hakata Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	45: {
-		"name": "Midare Toushirou",
-		"type": "Tantou"
-	},
-	46: {
-		"name": "Midare Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	47: {
-		"name": "Gokotai",
-		"type": "Tantou"
-	},
-	48: {
-		"name": "Gokotai Kiwame",
-		"type": "Tantou"
-	},
-	49: {
-		"name": "Yagen Toushirou",
-		"type": "Tantou"
-	},
-	50: {
-		"name": "Yagen Toushirou Kiwame",
-		"type": "Tantou"
-	},
-	51: {
-		"name": "Houchou Toushirou",
-		"type": "Tantou"
-	},
-	52: {
-		"name": "Houchou Toushirou",
-		"type": "Tantou"
-	},
-	53: {
-		"name": "Ookanehira",
-		"type": "Tachi"
-	},
-	55: {
-		"name": "Uguisumaru",
-		"type": "Tachi"
-	},
-	57: {
-		"name": "Akashi Kuniyuki",
-		"type": "Tachi"
-	},
-	59: {
-		"name": "Hotarumaru",
-		"type": "Oodachi"
-	},
-	61: {
-		"name": "Aizen Kunitoshi",
-		"type": "Tantou"
-	},
-	62: {
-		"name": "Aizen Kunitoshi Kiwame",
-		"type": "Tantou"
-	},
-	63: {
-		"name": "Sengo Muramasa",
-		"type": "Uchigatana"
-	},
-	65: {
-		"name": "Tonbokiri",
-		"type": "Yari"
-	},
-	67: {
-		"name": "Monoyoshi Sadamune",
-		"type": "Wakizashi"
-	},
-	69: {
-		"name": "Taikogane Sadamune",
-		"type": "Tantou"
-	},
-	70: {
-		"name": "Taikogane Sadamune",
-		"type": "Tantou"
-	},
-	71: {
-		"name": "Kikkou Sadamune",
-		"type": "Uchigatana"
-	},
-	73: {
-		"name": "Shokudaikiri Mitsutada",
-		"type": "Tachi"
-	},
-	79: {
-		"name": "Kousetsu Samonji",
-		"type": "Tachi"
-	},
-	81: {
-		"name": "Souza Samonji",
-		"type": "Uchigatana"
-	},
-	83: {
-		"name": "Sayo Samonji",
-		"type": "Tantou"
-	},
-	84: {
-		"name": "Sayo Samonji Kiwame",
-		"type": "Tantou"
-	},
-	85: {
-		"name": "Kashuu Kiyomitsu",
-		"type": "Uchigatana"
-	},
-	87: {
-		"name": "Yamatonokami Yasusada",
-		"type": "Uchigatana"
-	},
-	89: {
-		"name": "Kasen Kanesada",
-		"type": "Uchigatana"
-	},
-	91: {
-		"name": "Izuminokami Kanesada",
-		"type": "Uchigatana"
-	},
-	93: {
-		"name": "Mutsunokami Yoshiyuki",
-		"type": "Uchigatana"
-	},
-	95: {
-		"name": "Yamanbagiri Kunihiro",
-		"type": "Uchigatana"
-	},
-	97: {
-		"name": "Yamabushi Kunihiro",
-		"type": "Tachi"
-	},
-	99: {
-		"name": "Horikawa Kunihiro",
-		"type": "Wakizashi"
-	},
-	100: {
-		"name": "Horikawa Kunihiro",
-		"type": "Wakizashi"
-	},
-	101: {
-		"name": "Hachisuka Kotetsu",
-		"type": "Uchigatana"
-	},
-	103: {
-		"name": "Urashima Kotetsu",
-		"type": "Wakizashi"
-	},
-	105: {
-		"name": "Nagasone Kotetsu",
-		"type": "Uchigatana"
-	},
-	107: {
-		"name": "Higekiri",
-		"type": "Tachi"
-	},
-	108: {
-		"name": "Higekiri",
-		"type": "Tachi"
-	},
-	109: {
-		"name": "Higekiri",
-		"type": "Tachi"
-	},
-	110: {
-		"name": "Higekiri",
-		"type": "Tachi"
-	},
-	112: {
-		"name": "Hizamaru",
-		"type": "Tachi"
-	},
-	113: {
-		"name": "Hizamaru",
-		"type": "Tachi"
-	},
-	114: {
-		"name": "Hizamaru",
-		"type": "Tachi"
-	},
-	116: {
-		"name": "Ookurikara",
-		"type": "Uchigatana"
-	},
-	118: {
-		"name": "Heshikiri Hasebe",
-		"type": "Uchigatana"
-	},
-	120: {
-		"name": "Fudou Yukimitsu",
-		"type": "Tantou"
-	},
-	121: {
-		"name": "Fudou Yukimitsu Kiwame",
-		"type": "Tantou"
-	},
-	122: {
-		"name": "Shishiou",
-		"type": "Tachi"
-	},
-	124: {
-		"name": "Kogarasumaru",
-		"type": "Tachi"
-	},
-	128: {
-		"name": "Doudanuki Masakuni",
-		"type": "Uchigatana"
-	},
-	130: {
-		"name": "Tsurumaru Kuninaga",
-		"type": "Tachi"
-	},
-	132: {
-		"name": "Taroutachi",
-		"type": "Oodachi"
-	},
-	134: {
-		"name": "Jiroutachi",
-		"type": "Oodachi"
-	},
-	136: {
-		"name": "Nihongou",
-		"type": "Yari"
-	},
-	138: {
-		"name": "Otegine",
-		"type": "Yari"
-	},
-	140: {
-		"name": "Tomoegata Naginata",
-		"type": "Naginata"
-	},
-	142: {
-		"name": "Mouri Toushirou",
-		"type": "Tantou"
-	}
+    "3": {
+      "name": "Mikazuki",
+      "id": 3,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 2,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "5": {
+      "name": "Kogitsunemaru",
+      "id": 5,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 2,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "7": {
+      "name": "Ishikirimaru",
+      "id": 7,
+      "rarity": 3,
+      "type": "Oodachi",
+      "group": 2,
+      "equip": 2,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "8": {
+      "name": "Ishikirimaru K.",
+      "id": 8,
+      "rarity": 4,
+      "type": "Oodachi",
+      "group": 2,
+      "equip": 3,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 7
+    },
+    "9": {
+      "name": "Iwatooshi",
+      "id": 9,
+      "rarity": 3,
+      "type": "Naginata",
+      "group": 2,
+      "equip": 2,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"10": {
+      "name": "Iwatooshi K.",
+      "id": 10,
+      "rarity": 4,
+      "type": "Naginata",
+      "group": 2,
+      "equip": 3,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 6
+    },
+    "11": {
+      "name": "Imanotsurugi",
+      "id": 11,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 2,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "12": {
+      "name": "Imanotsurugi K.",
+      "id": 12,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 2,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "13": {
+      "name": "Oodenta",
+      "id": 13,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 14,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "15": {
+      "name": "Sohayanotsurugi",
+      "id": 15,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 14,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "17": {
+      "name": "Juzumaru",
+      "id": 17,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 12,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "19": {
+      "name": "Nikkari",
+      "id": 19,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 12,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "20": {
+      "name": "Nikkari K.",
+      "id": 20,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 12,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 3
+    },
+	"21": {
+      "name": "Onimaru",
+      "id": 21,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 9,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "23": {
+      "name": "Nakigitsune",
+      "id": 23,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "24": {
+      "name": "Nakigitsune K.",
+      "id": 24,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "25": {
+      "name": "Ichigo",
+      "id": 25,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 9,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "27": {
+      "name": "Namazuo",
+      "id": 27,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "28": {
+      "name": "Namazuo K.",
+      "id": 28,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "29": {
+      "name": "Honebami",
+      "id": 29,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "30": {
+      "name": "Honebami K.",
+      "id": 30,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "31": {
+      "name": "Hirano",
+      "id": 31,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "32": {
+      "name": "Hirano K.",
+      "id": 32,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "33": {
+      "name": "Atsushi",
+      "id": 33,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "34": {
+      "name": "Atsushi K.",
+      "id": 34,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "35": {
+      "name": "Gotou",
+      "id": 35,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "36": {
+      "name": "Gotou K.",
+      "id": 36,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "37": {
+      "name": "Shinano",
+      "id": 37,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "38": {
+      "name": "Shinano K.",
+      "id": 38,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "39": {
+      "name": "Maeda",
+      "id": 39,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "40": {
+      "name": "Maeda K.",
+      "id": 40,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "41": {
+      "name": "Akita",
+      "id": 41,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "42": {
+      "name": "Akita K.",
+      "id": 42,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "43": {
+      "name": "Hakata",
+      "id": 43,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "44": {
+      "name": "Hakata K.",
+      "id": 44,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "45": {
+      "name": "Midare",
+      "id": 45,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "46": {
+      "name": "Midare K.",
+      "id": 46,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "47": {
+      "name": "Gokotai",
+      "id": 47,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "48": {
+      "name": "Gokotai K.",
+      "id": 48,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "49": {
+      "name": "Yagen",
+      "id": 49,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "50": {
+      "name": "Yagen K.",
+      "id": 50,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "51": {
+      "name": "Houchou",
+      "id": 51,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "52": {
+      "name": "Houchou K.",
+      "id": 52,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+  },
+    "53": {
+      "name": "Ookanehira",
+      "id": 53,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 4,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "55": {
+      "name": "Uguisumaru",
+      "id": 55,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 4,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "57": {
+      "name": "Akashi",
+      "id": 57,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 8,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "59": {
+      "name": "Hotarumaru",
+      "id": 59,
+      "rarity": 4,
+      "type": "Oodachi",
+      "group": 8,
+      "equip": 3,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "60": {
+      "name": "Hotarumaru K.",
+      "id": 60,
+      "rarity": 5,
+      "type": "Oodachi",
+      "group": 8,
+      "equip": 3,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 7
+    },
+    "61": {
+      "name": "Aizen",
+      "id": 61,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 8,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "62": {
+      "name": "Aizen K.",
+      "id": 62,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 8,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "63": {
+      "name": "Sengo",
+      "id": 63,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 7,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    }, 
+    "64": {
+      "name": "Sengo K.",
+      "id": 64,
+      "rarity": 4,
+      "type": "Uchigatana",
+      "group": 7,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 5
+    }, 
+    "65": {
+      "name": "Tonbokiri",
+      "id": 65,
+      "rarity": 3,
+      "type": "Yari",
+      "group": 7,
+      "equip": 2,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"66": {
+      "name": "Tonbokiri K.",
+      "id": 66,
+      "rarity": 4,
+      "type": "Yari",
+      "group": 7,
+      "equip": 3,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 3
+    },    
+    "67": {
+      "name": "Monoyoshi",
+      "id": 67,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 13,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "68": {
+      "name": "Monoyoshi K.",
+      "id": 68,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 13,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "69": {
+      "name": "Taikogane",
+      "id": 69,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 13,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "70": {
+      "name": "Taikogane K.",
+      "id": 70,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 13,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "71": {
+      "name": "Kikkou",
+      "id": 71,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 13,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "72": {
+      "name": "Kikkou K.",
+      "id": 72,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 13,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "73": {
+      "name": "Shoukudaikiri",
+      "id": 73,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 11,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "75": {
+      "name": "Daihannya",
+      "id": 75,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 11,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "77": {
+      "name": "Koryuu",
+      "id": 77,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 11,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "79": {
+      "name": "Kousetsu",
+      "id": 79,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 6,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "81": {
+      "name": "Souza",
+      "id": 81,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 6,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "82": {
+      "name": "Souza K.",
+      "id": 82,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 6,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "83": {
+      "name": "Sayo",
+      "id": 83,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 6,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "84": {
+      "name": "Sayo K.",
+      "id": 84,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 6,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "85": {
+      "name": "Kashuu",
+      "id": 85,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "86": {
+      "name": "Kashuu K.",
+      "id": 86,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "87": {
+      "name": "Yamatonokami",
+      "id": 87,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "88": {
+      "name": "Yamatonokami K.",
+      "id": 88,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "89": {
+      "name": "Kasen",
+      "id": 89,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 3,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "90": {
+      "name": "Kasen K.",
+      "id": 90,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 3,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "91": {
+      "name": "Izuminokami",
+      "id": 91,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 3,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "92": {
+      "name": "Izuminokami K.",
+      "id": 92,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 3,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 5
+    },
+    "93": {
+      "name": "Mutsunokami",
+      "id": 93,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "94": {
+      "name": "Mutsunokami K.",
+      "id": 94,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "95": {
+      "name": "Yamanbagiri",
+      "id": 95,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 5,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "96": {
+      "name": "Yamanbagiri K.",
+      "id": 96,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 5,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+    "97": {
+      "name": "Yamabushi",
+      "id": 97,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 5,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "99": {
+      "name": "Horikawa",
+      "id": 99,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 5,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "100": {
+      "name": "Horikawa K.",
+      "id": 100,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 5,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "101": {
+      "name": "Hachisuka",
+      "id": 101,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 10,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "102": {
+      "name": "Hachisuka K.",
+      "id": 102,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 10,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 4
+    },
+    "103": {
+      "name": "Urashima",
+      "id": 103,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 10,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "104": {
+      "name": "Urashima K.",
+      "id": 104,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 10,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "105": {
+      "name": "Nagasone",
+      "id": 105,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 15,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "106": {
+      "name": "Nagasone K.",
+      "id": 106,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 15,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 4
+    },
+    "107": {
+      "name": "Higekiri",
+      "id": 107,
+      "rarity": 2,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "108": {
+      "name": "Higekiri",
+      "id": 108,
+      "rarity": 2,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 50,
+      "symbol": 1
+    },
+    "109": {
+      "name": "Higekiri",
+      "id": 109,
+      "rarity": 3,
+      "type": "Naginata",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 75,
+      "symbol": 1
+    },
+    "110": {
+      "name": "Higekiri",
+      "id": 110,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 75,
+      "symbol": 1
+    },
+    "112": {
+      "name": "Hizamaru",
+      "id": 112,
+      "rarity": 2,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "113": {
+      "name": "Hizamaru",
+      "id": 113,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 50,
+      "symbol": 1
+    },
+    "114": {
+      "name": "Hizamaru",
+      "id": 114,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 50,
+      "symbol": 1
+    },
+    "116": {
+      "name": "Ookurikara",
+      "id": 116,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "117": {
+      "name": "Ookurikara K.",
+      "id": 117,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 5
+    },
+    "118": {
+      "name": "Hasebe",
+      "id": 118,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "119": {
+      "name": "Hasebe K.",
+      "id": 119,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 4
+    },
+    "120": {
+      "name": "Fudou",
+      "id": 120,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "121": {
+      "name": "Fudou K.",
+      "id": 121,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+    },
+    "122": {
+      "name": "Shishiou",
+      "id": 122,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "124": {
+      "name": "Kogarasumaru",
+      "id": 124,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "128": {
+      "name": "Doudanuki",
+      "id": 128,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "129": {
+      "name": "Doudanuki K.",
+      "id": 129,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 5
+    },
+    "130": {
+      "name": "Tsurumaru",
+      "id": 130,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "132": {
+      "name": "Taroutachi",
+      "id": 132,
+      "rarity": 3,
+      "type": "Oodachi",
+      "group": 1,
+      "equip": 2,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "133": {
+      "name": "Taroutachi K.",
+      "id": 133,
+      "rarity": 4,
+      "type": "Oodachi",
+      "group": 1,
+      "equip": 3,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 7
+    },
+    "134": {
+      "name": "Jiroutachi",
+      "id": 134,
+      "rarity": 3,
+      "type": "Oodachi",
+      "group": 1,
+      "equip": 2,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "135": {
+      "name": "Jiroutachi K.",
+      "id": 135,
+      "rarity": 4,
+      "type": "Oodachi",
+      "group": 1,
+      "equip": 3,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 7
+    },
+    "136": {
+      "name": "Nihongou",
+      "id": 136,
+      "rarity": 4,
+      "type": "Yari",
+      "group": 1,
+      "equip": 3,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"137": {
+      "name": "Nihongou K.",
+      "id": 137,
+      "rarity": 5,
+      "type": "Yari",
+      "group": 1,
+      "equip": 3,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 3
+    },
+    "138": {
+      "name": "Otegine",
+      "id": 138,
+      "rarity": 3,
+      "type": "Yari",
+      "group": 1,
+      "equip": 2,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"139": {
+      "name": "Otegine K.",
+      "id": 139,
+      "rarity": 4,
+      "type": "Yari",
+      "group": 1,
+      "equip": 3,
+      "area": 4,
+      "upgrade": 25,
+      "symbol": 3
+    },
+    "140": {
+      "name": "Tomoegata",
+      "id": 140,
+      "rarity": 3,
+      "type": "Naginata",
+      "group": 1,
+      "equip": 2,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"141": {
+      "name": "Tomoegata K.",
+      "id": 141,
+      "rarity": 4,
+      "type": "Naginata",
+      "group": 1,
+      "equip": 3,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 6
+    },
+    "142": {
+      "name": "Mouri",
+      "id": 142,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 9,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"143": {
+	  "name": "Mouri K.",
+	  "id": 143,
+	  "rarity": 2,
+	  "type": "Tantou",
+	  "group": 9,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 2
+	},
+    "144": {
+      "name": "Kotegiri",
+      "id": 144,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 17,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"145": {
+	  "name": "Kotegiri K.",
+	  "id": 145,
+	  "rarity": 3,
+	  "type": "Wakizashi",
+	  "group": 17,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 3
+	},
+    "146": {
+      "name": "Kenshin",
+      "id": 146,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 11,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"147": {
+	  "name": "Kenshin K.",
+	  "id": 147,
+	  "rarity": 2,
+	  "type": "Tantou",
+	  "group": 11,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 2
+	},
+    "148": {
+      "name": "Azuki",
+      "id": 148,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 11,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "150": {
+      "name": "Hyuuga",
+      "id": 150,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 16,
+      "equip": 1,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"151": {
+	  "name": "Hyuuga K.",
+	  "id": 151,
+	  "rarity": 2,
+	  "type": "Tantou",
+	  "group": 16,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 2
+	},
+    "152": {
+      "name": "Shizukagata",
+      "id": 152,
+      "rarity": 3,
+      "type": "Naginata",
+      "group": 1,
+      "equip": 2,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"153": {
+      "name": "Shizukagata K.",
+      "id": 153,
+      "rarity": 4,
+      "type": "Naginata",
+      "group": 1,
+      "equip": 3,
+	  "area": 3,
+      "upgrade": 25,
+      "symbol": 6
+    },
+    "154": {
+      "name": "Nansen",
+      "id": 154,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 18,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"155": {
+	  "name": "Nansen K.",
+	  "id": 155,
+	  "rarity": 3,
+	  "type": "Uchigatana",
+	  "group": 18,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 4
+	},
+    "156": {
+      "name": "Chiyoganemaru",
+      "id": 156,
+      "rarity": 3,
+      "type": "Tachi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+    "158": {
+      "name": "Chougi",
+      "id": 158,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"159": {
+	  "name": "Chougi K.",
+	  "id": 159,
+	  "rarity": 3,
+	  "type": "Uchigatana",
+	  "group": 1,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 4
+	},
+    "160": {
+      "name": "Buzen",
+      "id": 160,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 17,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"161": {
+	  "name": "Buzen K.",
+	  "id": 161,
+	  "rarity": 3,
+	  "type": "Uchigatana",
+	  "group": 17,
+	  "equip": 2,
+	  "area": 1,
+	  "upgrade": 20,
+	  "symbol": 4
+	},
+    "162": {
+      "name": "Nenekirimaru",
+      "id": 162,
+      "rarity": 3,
+      "type": "Oodachi",
+      "group": 1,
+      "equip": 2,
+	  "area": 2,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"163": {
+	  "name": "Nenekirimaru K.",
+	  "id": 163,
+	  "rarity": 4,
+	  "type": "Oodachi",
+	  "group": 1,
+	  "equip": 3,
+	  "area": 2,
+	  "upgrade": 25,
+	  "symbol": 7
+	},
+    "164": {
+      "name": "Hakusan",
+      "id": 164,
+      "rarity": 4,
+      "type": "Tsurugi",
+      "group": 9,
+      "equip": 3,
+	  "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"166": {
+      "name": "Nankaitarou",
+      "id": 166,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"167": {
+      "name": "Nankaitarou K.",
+      "id": 167,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+    },
+	"168": {
+      "name": "Hizen",
+      "id": 168,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+	"169": {
+      "name": "Hizen K.",
+      "id": 169,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+	"170": {
+	  "name": "Chatannakiri",
+      "id": 170,
+      "rarity": 1,
+      "type": "Tantou",
+      "group": 1,
+      "equip": 1,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+	},
+	"171": {
+	  "name": "Chatannakiri K.",
+      "id": 171,
+      "rarity": 2,
+      "type": "Tantou",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 2
+	},
+	"172": {
+	  "name": "Kuwana Gou",
+      "id": 172,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 17,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+	},
+	"173": {
+	  "name": "Kuwana Gou K.",
+      "id": 173,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 17,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+	},
+	"174": {
+	  "name": "Suishinshi",
+      "id": 174,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+	},
+	"175": {
+	  "name": "Suishinshi K.",
+      "id": 175,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+	},
+	"176": {
+	  "name": "Minamoto",
+      "id": 176,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+	},
+	"177": {
+	  "name": "Minamoto K.",
+      "id": 177,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 1,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+	},
+	"178": {
+	  "name": "Matsui",
+      "id": 178,
+      "rarity": 2,
+      "type": "Uchigatana",
+      "group": 17,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+	},
+	"179": {
+	  "name": "Matsui K.",
+      "id": 179,
+      "rarity": 3,
+      "type": "Uchigatana",
+      "group": 17,
+      "equip": 2,
+	  "area": 1,
+      "upgrade": 20,
+      "symbol": 4
+	},
+	"180": {
+      "name": "Sanchoumou",
+      "id": 180,
+      "rarity": 5,
+      "type": "Tachi",
+      "group": 18,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    },
+	"182": {
+		"name": "Kokindenjunotachi",
+		"id": 182,
+		"rarity": 4,
+		"type": "Tachi",
+		"group": 19,
+		"equip": 3,
+		"area": 1,
+		"upgrade": 25,
+		"symbol": 1
+	},
+	"184": {
+		"name": "Jizou",
+		"id": 184,
+		"rarity": 2,
+		"type": "Uchigatana",
+		"group": 19,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"185": {
+		"name": "Jizou K.",
+		"id": 185,
+		"rarity": 3,
+		"type": "Uchigatana",
+		"group": 19,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 4
+	},
+    "186": {
+      "name": "Chiganemaru",
+      "id": 186,
+      "rarity": 2,
+      "type": "Wakizashi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 1
+    },
+    "187": {
+      "name": "Chiganemaru K.",
+      "id": 187,
+      "rarity": 3,
+      "type": "Wakizashi",
+      "group": 1,
+      "equip": 2,
+      "area": 1,
+      "upgrade": 20,
+      "symbol": 3
+    },
+    "188": {
+      "name": "Nikkou",
+      "id": 188,
+      "rarity": 4,
+      "type": "Tachi",
+      "group": 18,
+      "equip": 3,
+      "area": 1,
+      "upgrade": 25,
+      "symbol": 1
+    }
 }
