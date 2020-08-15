@@ -1,14 +1,7 @@
 define = {
-    "3": {
+    3: {
       "name": "Mikazuki",
-      "id": 3,
-      "rarity": 5,
-      "type": "Tachi",
-      "group": 2,
-      "equip": 3,
-      "area": 1,
-      "upgrade": 25,
-      "symbol": 1
+      "type": "Tachi"
     },
     "5": {
       "name": "Kogitsunemaru",
@@ -54,7 +47,7 @@ define = {
       "upgrade": 25,
       "symbol": 1
     },
-	"10": {
+10: {
       "name": "Iwatooshi K.",
       "id": 10,
       "rarity": 4,
