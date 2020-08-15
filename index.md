@@ -2,6 +2,10 @@
 
 This site will provide you access to useful tools that enhance the Touken Ranbu PC playing experience.
 
+### Touken Ranbu Tools
+- [Sword Stats]()
+- [TKRB Tracker](http://deltarium.org/tokenranbu/tamaatsume/index.html) (For events like Village of Treasures, Regiment Battle, etc.)
+
 ### Touken Ranbu Helper LITE
 The original Helper was made by weibo user moelynn, then translated into English by Oredare, Maitou, Seijuros, and Miiandering.
 This version supports Google Chrome and Mozilla Firefox. 
@@ -15,6 +19,7 @@ This is the basic, light-weight Touken Ranbu Helper that display critical Citade
 
 #### Installation
 ##### Download
+**Link: [Touken Ranbu Helper LITE](https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases)**
 1. For Chrome: Download and extract the .zip/.rar to your hard drive (the .zip/.rar contains a folder named 'Touken Ranbu Helper')
 2. For Firefox: Simply download the .zip (do not extract), or instead, download the .xpi to your hard drive
 
