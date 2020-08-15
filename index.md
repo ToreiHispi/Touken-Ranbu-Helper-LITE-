@@ -3,7 +3,7 @@
 This site will provide you access to useful tools that enhance the Touken Ranbu PC playing experience.
 
 ### Touken Ranbu Tools
-- [Sword Stats]()
+- [Sword Stats](https://toreihispi.github.io/Touken-Ranbu-Helper-LITE-/swords/index.html)
 - [TKRB Tracker](http://deltarium.org/tokenranbu/tamaatsume/index.html) (For events like Village of Treasures, Regiment Battle, etc.)
 
 ### Touken Ranbu Helper LITE
