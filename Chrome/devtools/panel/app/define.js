@@ -704,7 +704,7 @@
       "symbol": 4
     },
     "73": {
-      "name": "Shoukudaikiri",
+      "name": "Shokudaikiri",
       "id": 73,
       "rarity": 3,
       "type": 2,
@@ -1267,10 +1267,10 @@
     "136": {
       "name": "Nihongou",
       "id": 136,
-      "rarity": 3,
+      "rarity": 4,
       "type": 6,
       "group": 1,
-      "equip": 2,
+      "equip": 3,
       "area": 4,
       "upgrade": 25,
       "symbol": 1
@@ -1278,7 +1278,7 @@
 	"137": {
       "name": "Nihongou K.",
       "id": 137,
-      "rarity": 4,
+      "rarity": 5,
       "type": 6,
       "group": 1,
       "equip": 3,
@@ -1628,7 +1628,7 @@
       "symbol": 2
 	},
 	"172": {
-	  "name": "Kuwana Gou",
+	  "name": "Kuwana",
       "id": 172,
       "rarity": 2,
       "type": 5,
@@ -1639,7 +1639,7 @@
       "symbol": 1
 	},
 	"173": {
-	  "name": "Kuwana Gou K.",
+	  "name": "Kuwana K.",
       "id": 173,
       "rarity": 3,
       "type": 5,
@@ -1782,7 +1782,7 @@
       "symbol": 3
     },
     "188": {
-      "name": "Nikkou Ichimonji",
+      "name": "Nikkou",
       "id": 188,
       "rarity": 4,
       "type": 2,
