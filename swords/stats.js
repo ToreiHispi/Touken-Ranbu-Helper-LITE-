@@ -24,6 +24,11 @@ function sf(value) {
 	}
 }
 
+function modDate() {
+	var date = new Date(document.lastModified);
+	document.getElementById("mod").innerHTML = date;
+}
+
 function hide(btn) {
 	var property = document.getElementsByClassName(btn);
 	for (var i = 0; i < property.length; i++) {
