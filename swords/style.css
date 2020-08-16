@@ -1,7 +1,18 @@
 
-button, textarea, p {
+button, p {
 	margin: 1em;
 	min-height: 3em;
+}
+
+textarea {
+	margin: auto;
+	width: 90%;
+	padding: 3px;
+}
+
+.textbox {
+	margin: auto;
+	width: 75%;
 }
 
 .stat {
@@ -24,10 +35,11 @@ button, textarea, p {
 	font-weight: bold;
 }
 footer {
-	font-size: 0.75em;
+	font-size: 1em;
 	text-align: center;
 }
 footer a, footer span {
 	text-decoration: none;
+	font-size: 1em;
 	color: #cc0088;
 }

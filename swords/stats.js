@@ -24,9 +24,11 @@ function sf(value) {
 	}
 }
 
-function modDate() {
+function modDate(id) {
 	var date = new Date(document.lastModified);
-	document.getElementById("mod").innerHTML = date;
+	var ddd = new Date();
+	console.log(ddd);
+	document.getElementById(id).innerHTML = date.toLocaleString();
 }
 
 function hide(btn) {
@@ -130,7 +132,7 @@ function display() {
 			var next_exp = "";
 		}
 		// computations
-		var days = new Date() - Date.parse(birth.replace(/-/g,"/"));
+		var days = new Date() - Date.parse(birth.replace(/-/g,"/")+" +0900");
 		days = Math.round(days/1000/60/60/24);
 		// display, only if locked
 		if (lock=="1") {
