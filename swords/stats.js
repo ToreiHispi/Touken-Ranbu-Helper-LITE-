@@ -83,9 +83,30 @@ function display() {
 		}
 		if (response.sword[toudan].equip_serial_id1 == null && response.sword[toudan].equip_serial_id2 == null && response.sword[toudan].equip_serial_id3 == null) {
 			var troops = "";
+			if (define.swords[no] !== undefined) {
+				if (parseInt(define.swords[no].equip, 10)==3) {
+					troops = "-- / -- / --";
+				} else if (parseInt(define.swords[no].equip, 10)==2) {
+					troops = "-- / -- ";
+				} else {
+					troops = "--";
+				}
+			}
 			
 		} else {
-			var troops = "troops";
+			var troops = "";
+			let troop1 = (response.sword[toudan].equip_serial_id1 ? define.equips[response.equip[response.sword[toudan].equip_serial_id1].equip_id].name : "--");
+			troops = troop1;
+			if (define.swords[no] !== undefined) {
+				if (parseInt(define.swords[no].equip, 10)>1) {
+					let troop2 = (response.sword[toudan].equip_serial_id2 ? define.equips[response.equip[response.sword[toudan].equip_serial_id2].equip_id].name : "--");
+					troops += " / "+troop2;
+				}
+				if (parseInt(define.swords[no].equip, 10)>2) {
+					let troop3 = (response.sword[toudan].equip_serial_id3 ? define.equips[response.equip[response.sword[toudan].equip_serial_id3].equip_id].name : "--");
+					troops += " / "+troop3;
+				}
+			}
 		}
 		if (define.swords[no] !== undefined) {
 			var name = define.swords[no].name;
