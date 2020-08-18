@@ -10,7 +10,7 @@ body {
   font-family: Ubuntu, "Helvetica Neue", Helvetica, "Nimbus Sans L", "Open Sans", "Roboto", "Segoe WP", "Segoe UI", arial, "Liberation Sans", freesans, clean, "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans CJK TC", "Source Han Sans TW", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK", "Source Han Sans", "Microsoft YaHei UI", "Microsoft YaHei", DengXian, "Wenquanyi Micro Hei", "ST Heiti", "Droid Sans Fallback", "Microsoft JhengHei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: #efdeb0;
-  background-image: url("../../static/ui/bgs.png");
+  background-image: url("../ui/bgs.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   min-height: 100%;
@@ -106,6 +106,7 @@ a {
   width: 100%;
   z-index: 1000;
   top: 0;
+  
 }
 
 .view-content {
@@ -149,6 +150,7 @@ a {
   line-height: 1.6;
   color: #fff;
   background-color: #3d382e;
+  width: 100%;
 }
 
 .switch-tab small {
@@ -156,13 +158,12 @@ a {
 }
 
 .switch-tab a {
-  display: block;
-  float: left;
-  width: 20%;
-  outline: none;
+  font-size: 100%;
+  line-height: 36px;
+  height: 36px;
   text-align: center;
-  border-top: 4px #3d382e solid;
-  border-bottom: 4px #3d382e solid;
+  width: 100%;
+  outline: none;
 }
 
 .switch-tab small {
@@ -180,13 +181,16 @@ a {
 .main-menu {
   height: 36px;
   overflow: hidden;
+  display: inline-grid;
+  width: calc(25% - 3px);
 }
 
 .menu-cover {
   font-size: 120%;
   line-height: 36px;
   height: 36px;
-  margin-bottom: 4px;
+  text-align: center;
+  width: 100%;
 }
 
 .main-menu:hover {
@@ -200,7 +204,6 @@ a {
 .menu-inner {
   padding: 4px 0;
   position: relative;
-  z-index: 100;
   height: 36px;
   background-color: #3d382e;
   border-top: 1px #332c21 solid;
@@ -482,6 +485,7 @@ a {
   font-weight:bold;
   padding: 12px;
   text-align: center;
+  margin-top: 36px;
 }
 .data-table {
   box-sizing: border-box;
