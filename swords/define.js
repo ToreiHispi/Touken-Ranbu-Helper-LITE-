@@ -1,7 +1,7 @@
 define = {
 	"swords": {
 		"3": {
-			"name": "Mikazuki Munechika",
+			"name": "Mikazuki",
 			"id": 3,
 			"rarity": 5,
 			"type": 2,
@@ -22,6 +22,17 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"6": {
+			"name": "Kogitsunemaru K.",
+			"id": 6,
+			"rarity": 4,
+			"type": 2,
+			"group": 2,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"7": {
 			"name": "Ishikirimaru",
 			"id": 7,
@@ -34,7 +45,7 @@ define = {
 			"symbol": 1
 		},
 		"8": {
-			"name": "Ishikirimaru",
+			"name": "Ishikirimaru K.",
 			"id": 8,
 			"rarity": 4,
 			"type": 1,
@@ -42,7 +53,7 @@ define = {
 			"equip": 3,
 			"area": 2,
 			"upgrade": 25,
-			"symbol": 9
+			"symbol": 7
 		},
 		"9": {
 			"name": "Iwatooshi",
@@ -56,7 +67,7 @@ define = {
 			"symbol": 1
 		},
 		"10": {
-			"name": "Iwatooshi",
+			"name": "Iwatooshi K.",
 			"id": 10,
 			"rarity": 4,
 			"type": 3,
@@ -64,7 +75,7 @@ define = {
 			"equip": 3,
 			"area": 3,
 			"upgrade": 25,
-			"symbol": 7
+			"symbol": 6
 		},
 		"11": {
 			"name": "Imanotsurugi",
@@ -78,7 +89,7 @@ define = {
 			"symbol": 1
 		},
 		"12": {
-			"name": "Imanotsurugi",
+			"name": "Imanotsurugi K.",
 			"id": 12,
 			"rarity": 2,
 			"type": 7,
@@ -89,7 +100,7 @@ define = {
 			"symbol": 2
 		},
 		"13": {
-			"name": "Oodenta Mitsuyo",
+			"name": "Oodenta",
 			"id": 13,
 			"rarity": 5,
 			"type": 2,
@@ -110,8 +121,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"16": {
+			"name": "Sohayanotsurugi K.",
+			"id": 16,
+			"rarity": 4,
+			"type": 2,
+			"group": 14,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"17": {
-			"name": "Juzumaru Tsunetsugu",
+			"name": "Juzumaru",
 			"id": 17,
 			"rarity": 5,
 			"type": 2,
@@ -122,7 +144,7 @@ define = {
 			"symbol": 1
 		},
 		"19": {
-			"name": "Nikkari Aoe",
+			"name": "Nikkari",
 			"id": 19,
 			"rarity": 2,
 			"type": 4,
@@ -133,7 +155,7 @@ define = {
 			"symbol": 1
 		},
 		"20": {
-			"name": "Nikkari Aoe",
+			"name": "Nikkari K.",
 			"id": 20,
 			"rarity": 3,
 			"type": 4,
@@ -166,7 +188,7 @@ define = {
 			"symbol": 1
 		},
 		"24": {
-			"name": "Nakigitsune",
+			"name": "Nakigitsune K.",
 			"id": 24,
 			"rarity": 3,
 			"type": 5,
@@ -177,7 +199,7 @@ define = {
 			"symbol": 4
 		},
 		"25": {
-			"name": "Ichigo Hitofuri",
+			"name": "Ichigo",
 			"id": 25,
 			"rarity": 4,
 			"type": 2,
@@ -187,8 +209,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"26": {
+			"name": "Ichigo K.",
+			"id": 26,
+			"rarity": 5,
+			"type": 2,
+			"group": 9,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"27": {
-			"name": "Namazuo Toushirou",
+			"name": "Namazuo",
 			"id": 27,
 			"rarity": 2,
 			"type": 4,
@@ -199,7 +232,7 @@ define = {
 			"symbol": 1
 		},
 		"28": {
-			"name": "Namazuo Toushirou",
+			"name": "Namazuo K.",
 			"id": 28,
 			"rarity": 3,
 			"type": 4,
@@ -210,7 +243,7 @@ define = {
 			"symbol": 3
 		},
 		"29": {
-			"name": "Honebami Toushirou",
+			"name": "Honebami",
 			"id": 29,
 			"rarity": 2,
 			"type": 4,
@@ -221,7 +254,7 @@ define = {
 			"symbol": 1
 		},
 		"30": {
-			"name": "Honebami Toushirou",
+			"name": "Honebami K.",
 			"id": 30,
 			"rarity": 3,
 			"type": 4,
@@ -232,7 +265,7 @@ define = {
 			"symbol": 3
 		},
 		"31": {
-			"name": "Hirano Toushirou",
+			"name": "Hirano",
 			"id": 31,
 			"rarity": 1,
 			"type": 7,
@@ -243,7 +276,7 @@ define = {
 			"symbol": 1
 		},
 		"32": {
-			"name": "Hirano Toushirou",
+			"name": "Hirano K.",
 			"id": 32,
 			"rarity": 2,
 			"type": 7,
@@ -254,7 +287,7 @@ define = {
 			"symbol": 2
 		},
 		"33": {
-			"name": "Atsushi Toushirou",
+			"name": "Atsushi",
 			"id": 33,
 			"rarity": 1,
 			"type": 7,
@@ -265,7 +298,7 @@ define = {
 			"symbol": 1
 		},
 		"34": {
-			"name": "Atsushi Toushirou",
+			"name": "Atsushi K.",
 			"id": 34,
 			"rarity": 2,
 			"type": 7,
@@ -276,7 +309,7 @@ define = {
 			"symbol": 2
 		},
 		"35": {
-			"name": "Gotou Toushirou",
+			"name": "Gotou",
 			"id": 35,
 			"rarity": 1,
 			"type": 7,
@@ -287,7 +320,7 @@ define = {
 			"symbol": 1
 		},
 		"36": {
-			"name": "Gotou Toushirou",
+			"name": "Gotou K.",
 			"id": 36,
 			"rarity": 2,
 			"type": 7,
@@ -298,7 +331,7 @@ define = {
 			"symbol": 2
 		},
 		"37": {
-			"name": "Shinano Toushirou",
+			"name": "Shinano",
 			"id": 37,
 			"rarity": 1,
 			"type": 7,
@@ -309,7 +342,7 @@ define = {
 			"symbol": 1
 		},
 		"38": {
-			"name": "Shinano Toushirou",
+			"name": "Shinano K.",
 			"id": 38,
 			"rarity": 2,
 			"type": 7,
@@ -320,7 +353,7 @@ define = {
 			"symbol": 2
 		},
 		"39": {
-			"name": "Maeda Toushirou",
+			"name": "Maeda",
 			"id": 39,
 			"rarity": 1,
 			"type": 7,
@@ -331,7 +364,7 @@ define = {
 			"symbol": 1
 		},
 		"40": {
-			"name": "Maeda Toushirou",
+			"name": "Maeda K.",
 			"id": 40,
 			"rarity": 2,
 			"type": 7,
@@ -342,7 +375,7 @@ define = {
 			"symbol": 2
 		},
 		"41": {
-			"name": "Akita Toushirou",
+			"name": "Akita",
 			"id": 41,
 			"rarity": 1,
 			"type": 7,
@@ -353,7 +386,7 @@ define = {
 			"symbol": 1
 		},
 		"42": {
-			"name": "Akita Toushirou",
+			"name": "Akita K.",
 			"id": 42,
 			"rarity": 2,
 			"type": 7,
@@ -364,7 +397,7 @@ define = {
 			"symbol": 2
 		},
 		"43": {
-			"name": "Hakata Toushirou",
+			"name": "Hakata",
 			"id": 43,
 			"rarity": 1,
 			"type": 7,
@@ -375,7 +408,7 @@ define = {
 			"symbol": 1
 		},
 		"44": {
-			"name": "Hakata Toushirou",
+			"name": "Hakata K.",
 			"id": 44,
 			"rarity": 2,
 			"type": 7,
@@ -386,7 +419,7 @@ define = {
 			"symbol": 2
 		},
 		"45": {
-			"name": "Midare Toushirou",
+			"name": "Midare",
 			"id": 45,
 			"rarity": 1,
 			"type": 7,
@@ -397,7 +430,7 @@ define = {
 			"symbol": 1
 		},
 		"46": {
-			"name": "Midare Toushirou",
+			"name": "Midare K.",
 			"id": 46,
 			"rarity": 2,
 			"type": 7,
@@ -419,7 +452,7 @@ define = {
 			"symbol": 1
 		},
 		"48": {
-			"name": "Gokotai",
+			"name": "Gokotai K.",
 			"id": 48,
 			"rarity": 2,
 			"type": 7,
@@ -430,7 +463,7 @@ define = {
 			"symbol": 2
 		},
 		"49": {
-			"name": "Yagen Toushirou",
+			"name": "Yagen",
 			"id": 49,
 			"rarity": 1,
 			"type": 7,
@@ -441,7 +474,7 @@ define = {
 			"symbol": 1
 		},
 		"50": {
-			"name": "Yagen Toushirou",
+			"name": "Yagen K.",
 			"id": 50,
 			"rarity": 2,
 			"type": 7,
@@ -452,7 +485,7 @@ define = {
 			"symbol": 2
 		},
 		"51": {
-			"name": "Houchou Toushirou",
+			"name": "Houchou",
 			"id": 51,
 			"rarity": 1,
 			"type": 7,
@@ -463,7 +496,7 @@ define = {
 			"symbol": 1
 		},
 		"52": {
-			"name": "Houchou Toushirou",
+			"name": "Houchou K.",
 			"id": 52,
 			"rarity": 2,
 			"type": 7,
@@ -472,7 +505,7 @@ define = {
 			"area": 1,
 			"upgrade": 20,
 			"symbol": 2
-		},
+	  },
 		"53": {
 			"name": "Ookanehira",
 			"id": 53,
@@ -495,8 +528,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"56": {
+			"name": "Uguisumaru K.",
+			"id": 56,
+			"rarity": 5,
+			"type": 2,
+			"group": 4,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"57": {
-			"name": "Akashi Kuniyuki",
+			"name": "Akashi",
 			"id": 57,
 			"rarity": 3,
 			"type": 2,
@@ -505,6 +549,17 @@ define = {
 			"area": 1,
 			"upgrade": 25,
 			"symbol": 1
+		},
+		"58": {
+			"name": "Akashi K.",
+			"id": 58,
+			"rarity": 4,
+			"type": 2,
+			"group": 8,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
 		},
 		"59": {
 			"name": "Hotarumaru",
@@ -518,7 +573,7 @@ define = {
 			"symbol": 1
 		},
 		"60": {
-			"name": "Hotarumaru",
+			"name": "Hotarumaru K.",
 			"id": 60,
 			"rarity": 5,
 			"type": 1,
@@ -526,10 +581,10 @@ define = {
 			"equip": 3,
 			"area": 2,
 			"upgrade": 25,
-			"symbol": 9
+			"symbol": 7
 		},
 		"61": {
-			"name": "Aizen Kunitoshi",
+			"name": "Aizen",
 			"id": 61,
 			"rarity": 1,
 			"type": 7,
@@ -540,7 +595,7 @@ define = {
 			"symbol": 1
 		},
 		"62": {
-			"name": "Aizen Kunitoshi",
+			"name": "Aizen K.",
 			"id": 62,
 			"rarity": 2,
 			"type": 7,
@@ -551,7 +606,7 @@ define = {
 			"symbol": 2
 		},
 		"63": {
-			"name": "Sengo Muramasa",
+			"name": "Sengo",
 			"id": 63,
 			"rarity": 3,
 			"type": 5,
@@ -562,7 +617,7 @@ define = {
 			"symbol": 1
 		}, 
 		"64": {
-			"name": "Sengo Muramasa",
+			"name": "Sengo K.",
 			"id": 64,
 			"rarity": 4,
 			"type": 5,
@@ -584,7 +639,7 @@ define = {
 			"symbol": 1
 		},
 		"66": {
-			"name": "Tonbokiri",
+			"name": "Tonbokiri K.",
 			"id": 66,
 			"rarity": 4,
 			"type": 6,
@@ -592,10 +647,10 @@ define = {
 			"equip": 3,
 			"area": 4,
 			"upgrade": 25,
-			"symbol": 6
+			"symbol": 3
 		},	
 		"67": {
-			"name": "Monoyoshi Sadamune",
+			"name": "Monoyoshi",
 			"id": 67,
 			"rarity": 2,
 			"type": 4,
@@ -606,7 +661,7 @@ define = {
 			"symbol": 1
 		},
 		"68": {
-			"name": "Monoyoshi Sadamune",
+			"name": "Monoyoshi K.",
 			"id": 68,
 			"rarity": 3,
 			"type": 4,
@@ -617,7 +672,7 @@ define = {
 			"symbol": 3
 		},
 		"69": {
-			"name": "Taikogane Sadamune",
+			"name": "Taikogane",
 			"id": 69,
 			"rarity": 1,
 			"type": 7,
@@ -628,7 +683,7 @@ define = {
 			"symbol": 1
 		},
 		"70": {
-			"name": "Taikogane Sadamune",
+			"name": "Taikogane K.",
 			"id": 70,
 			"rarity": 2,
 			"type": 7,
@@ -639,7 +694,7 @@ define = {
 			"symbol": 2
 		},
 		"71": {
-			"name": "Kikkou Sadamune",
+			"name": "Kikkou",
 			"id": 71,
 			"rarity": 2,
 			"type": 5,
@@ -650,7 +705,7 @@ define = {
 			"symbol": 1
 		},
 		"72": {
-			"name": "Kikkou Sadamune",
+			"name": "Kikkou K.",
 			"id": 72,
 			"rarity": 3,
 			"type": 5,
@@ -661,7 +716,7 @@ define = {
 			"symbol": 4
 		},
 		"73": {
-			"name": "Shokudaikiri Mitsutada",
+			"name": "Shokudaikiri",
 			"id": 73,
 			"rarity": 3,
 			"type": 2,
@@ -671,8 +726,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"74": {
+			"name": "Shokudaikiri K.",
+			"id": 74,
+			"rarity": 4,
+			"type": 2,
+			"group": 11,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"75": {
-			"name": "Daihannya Nagamitsu",
+			"name": "Daihannya",
 			"id": 75,
 			"rarity": 4,
 			"type": 2,
@@ -682,8 +748,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"76": {
+			"name": "Daihannya K.",
+			"id": 76,
+			"rarity": 5,
+			"type": 2,
+			"group": 11,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"77": {
-			"name": "Koryuu Kagemitsu",
+			"name": "Koryuu",
 			"id": 77,
 			"rarity": 4,
 			"type": 2,
@@ -693,8 +770,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"78": {
+			"name": "Koryuu K.",
+			"id": 78,
+			"rarity": 5,
+			"type": 2,
+			"group": 11,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"79": {
-			"name": "Kousetsu Samonji",
+			"name": "Kousetsu",
 			"id": 79,
 			"rarity": 4,
 			"type": 2,
@@ -704,8 +792,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"80": {
+			"name": "Kousetsu K.",
+			"id": 80,
+			"rarity": 5,
+			"type": 2,
+			"group": 6,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"81": {
-			"name": "Souza Samonji",
+			"name": "Souza",
 			"id": 81,
 			"rarity": 2,
 			"type": 5,
@@ -716,7 +815,7 @@ define = {
 			"symbol": 1
 		},
 		"82": {
-			"name": "Souza Samonji",
+			"name": "Souza K.",
 			"id": 82,
 			"rarity": 3,
 			"type": 5,
@@ -727,7 +826,7 @@ define = {
 			"symbol": 4
 		},
 		"83": {
-			"name": "Sayo Samonji",
+			"name": "Sayo",
 			"id": 83,
 			"rarity": 1,
 			"type": 7,
@@ -738,7 +837,7 @@ define = {
 			"symbol": 1
 		},
 		"84": {
-			"name": "Sayo Samonji",
+			"name": "Sayo K.",
 			"id": 84,
 			"rarity": 2,
 			"type": 7,
@@ -749,7 +848,7 @@ define = {
 			"symbol": 2
 		},
 		"85": {
-			"name": "Kashuu Kiyomitsu",
+			"name": "Kashuu",
 			"id": 85,
 			"rarity": 2,
 			"type": 5,
@@ -760,7 +859,7 @@ define = {
 			"symbol": 1
 		},
 		"86": {
-			"name": "Kashuu Kiyomitsu",
+			"name": "Kashuu K.",
 			"id": 86,
 			"rarity": 3,
 			"type": 5,
@@ -771,7 +870,7 @@ define = {
 			"symbol": 4
 		},
 		"87": {
-			"name": "Yamatonokami Yasusada",
+			"name": "Yamatonokami",
 			"id": 87,
 			"rarity": 2,
 			"type": 5,
@@ -782,7 +881,7 @@ define = {
 			"symbol": 1
 		},
 		"88": {
-			"name": "Yamatonokami Yasusada",
+			"name": "Yamatonokami K.",
 			"id": 88,
 			"rarity": 3,
 			"type": 5,
@@ -793,7 +892,7 @@ define = {
 			"symbol": 4
 		},
 		"89": {
-			"name": "Kasen Kanesada",
+			"name": "Kasen",
 			"id": 89,
 			"rarity": 2,
 			"type": 5,
@@ -804,7 +903,7 @@ define = {
 			"symbol": 1
 		},
 		"90": {
-			"name": "Kasen Kanesada",
+			"name": "Kasen K.",
 			"id": 90,
 			"rarity": 3,
 			"type": 5,
@@ -815,10 +914,10 @@ define = {
 			"symbol": 4
 		},
 		"91": {
-			"name": "Izuminokami Kanesada",
+			"name": "Izuminokami",
 			"id": 91,
 			"rarity": 3,
-			"type": 2,
+			"type": 5,
 			"group": 3,
 			"equip": 2,
 			"area": 1,
@@ -826,10 +925,10 @@ define = {
 			"symbol": 1
 		},
 		"92": {
-			"name": "Izuminokami Kanesada",
+			"name": "Izuminokami K.",
 			"id": 92,
 			"rarity": 4,
-			"type": 2,
+			"type": 5,
 			"group": 3,
 			"equip": 3,
 			"area": 1,
@@ -837,7 +936,7 @@ define = {
 			"symbol": 5
 		},
 		"93": {
-			"name": "Mutsunokami Yoshiyuki",
+			"name": "Mutsunokami",
 			"id": 93,
 			"rarity": 2,
 			"type": 5,
@@ -848,7 +947,7 @@ define = {
 			"symbol": 1
 		},
 		"94": {
-			"name": "Mutsunokami Yoshiyuki",
+			"name": "Mutsunokami K.",
 			"id": 94,
 			"rarity": 3,
 			"type": 5,
@@ -859,7 +958,7 @@ define = {
 			"symbol": 4
 		},
 		"95": {
-			"name": "Yamanbagiri Kunihiro",
+			"name": "Yamanbagiri",
 			"id": 95,
 			"rarity": 2,
 			"type": 5,
@@ -870,7 +969,7 @@ define = {
 			"symbol": 1
 		},
 		"96": {
-			"name": "Yamanbagiri  Kunihiro",
+			"name": "Yamanbagiri K.",
 			"id": 96,
 			"rarity": 3,
 			"type": 5,
@@ -881,7 +980,7 @@ define = {
 			"symbol": 4
 		},
 		"97": {
-			"name": "Yamabushi  Kunihiro",
+			"name": "Yamabushi",
 			"id": 97,
 			"rarity": 3,
 			"type": 2,
@@ -891,8 +990,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"98": {
+			"name": "Yamabushi K.",
+			"id": 98,
+			"rarity": 4,
+			"type": 2,
+			"group": 5,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"99": {
-			"name": "Horikawa  Kunihiro",
+			"name": "Horikawa",
 			"id": 99,
 			"rarity": 2,
 			"type": 4,
@@ -903,7 +1013,7 @@ define = {
 			"symbol": 1
 		},
 		"100": {
-			"name": "Horikawa  Kunihiro",
+			"name": "Horikawa K.",
 			"id": 100,
 			"rarity": 3,
 			"type": 4,
@@ -914,7 +1024,7 @@ define = {
 			"symbol": 3
 		},
 		"101": {
-			"name": "Hachisuka Kotetsu",
+			"name": "Hachisuka",
 			"id": 101,
 			"rarity": 2,
 			"type": 5,
@@ -925,7 +1035,7 @@ define = {
 			"symbol": 1
 		},
 		"102": {
-			"name": "Hachisuka Kotetsu",
+			"name": "Hachisuka K.",
 			"id": 102,
 			"rarity": 3,
 			"type": 5,
@@ -936,7 +1046,7 @@ define = {
 			"symbol": 4
 		},
 		"103": {
-			"name": "Urashima Kotetsu",
+			"name": "Urashima",
 			"id": 103,
 			"rarity": 2,
 			"type": 4,
@@ -947,7 +1057,7 @@ define = {
 			"symbol": 1
 		},
 		"104": {
-			"name": "Urashima Kotetsu",
+			"name": "Urashima K.",
 			"id": 104,
 			"rarity": 3,
 			"type": 4,
@@ -958,7 +1068,7 @@ define = {
 			"symbol": 3
 		},
 		"105": {
-			"name": "Nagasone Kotetsu",
+			"name": "Nagasone",
 			"id": 105,
 			"rarity": 2,
 			"type": 5,
@@ -969,7 +1079,7 @@ define = {
 			"symbol": 1
 		},
 		"106": {
-			"name": "Nagasone Kotetsu",
+			"name": "Nagasone K.",
 			"id": 106,
 			"rarity": 3,
 			"type": 5,
@@ -1023,6 +1133,17 @@ define = {
 			"upgrade": 75,
 			"symbol": 1
 		},
+		"111": {
+			"name": "Higekiri K.",
+			"id": 111,
+			"rarity": 5,
+			"type": 2,
+			"group": 1,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 75,
+			"symbol": 10
+		},
 		"112": {
 			"name": "Hizamaru",
 			"id": 112,
@@ -1056,11 +1177,22 @@ define = {
 			"upgrade": 50,
 			"symbol": 1
 		},
+		"115": {
+			"name": "Hizamaru K.",
+			"id": 115,
+			"rarity": 5,
+			"type": 2,
+			"group": 1,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 50,
+			"symbol": 10
+		},
 		"116": {
 			"name": "Ookurikara",
 			"id": 116,
 			"rarity": 3,
-			"type": 2,
+			"type": 5,
 			"group": 1,
 			"equip": 2,
 			"area": 1,
@@ -1068,10 +1200,10 @@ define = {
 			"symbol": 1
 		},
 		"117": {
-			"name": "Ookurikara",
+			"name": "Ookurikara K.",
 			"id": 117,
 			"rarity": 4,
-			"type": 2,
+			"type": 5,
 			"group": 1,
 			"equip": 3,
 			"area": 1,
@@ -1079,7 +1211,7 @@ define = {
 			"symbol": 5
 		},
 		"118": {
-			"name": "Heshikiri Hasebe",
+			"name": "Hasebe",
 			"id": 118,
 			"rarity": 2,
 			"type": 5,
@@ -1090,7 +1222,7 @@ define = {
 			"symbol": 1
 		},
 		"119": {
-			"name": "Heshikiri Hasebe",
+			"name": "Hasebe K.",
 			"id": 119,
 			"rarity": 3,
 			"type": 5,
@@ -1101,7 +1233,7 @@ define = {
 			"symbol": 4
 		},
 		"120": {
-			"name": "Fudou Yukimitsu",
+			"name": "Fudou",
 			"id": 120,
 			"rarity": 1,
 			"type": 7,
@@ -1112,7 +1244,7 @@ define = {
 			"symbol": 1
 		},
 		"121": {
-			"name": "Fudou Yukimitsu",
+			"name": "Fudou K.",
 			"id": 121,
 			"rarity": 2,
 			"type": 7,
@@ -1133,6 +1265,17 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"123": {
+			"name": "Shishiou K.",
+			"id": 122,
+			"rarity": 4,
+			"type": 2,
+			"group": 1,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"124": {
 			"name": "Kogarasumaru",
 			"id": 124,
@@ -1145,10 +1288,10 @@ define = {
 			"symbol": 1
 		},
 		"128": {
-			"name": "Doudanuki Masakuni",
+			"name": "Doudanuki",
 			"id": 128,
 			"rarity": 3,
-			"type": 2,
+			"type": 5,
 			"group": 1,
 			"equip": 2,
 			"area": 1,
@@ -1156,10 +1299,10 @@ define = {
 			"symbol": 1
 		},
 		"129": {
-			"name": "Doudanuki Masakuni",
+			"name": "Doudanuki K.",
 			"id": 129,
 			"rarity": 4,
-			"type": 2,
+			"type": 5,
 			"group": 1,
 			"equip": 3,
 			"area": 1,
@@ -1167,7 +1310,7 @@ define = {
 			"symbol": 5
 		},
 		"130": {
-			"name": "Tsurumaru Kuninaga",
+			"name": "Tsurumaru",
 			"id": 130,
 			"rarity": 4,
 			"type": 2,
@@ -1176,6 +1319,17 @@ define = {
 			"area": 1,
 			"upgrade": 25,
 			"symbol": 1
+		},
+		"131": {
+			"name": "Tsurumaru K.",
+			"id": 131,
+			"rarity": 5,
+			"type": 2,
+			"group": 1,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
 		},
 		"132": {
 			"name": "Taroutachi",
@@ -1189,7 +1343,7 @@ define = {
 			"symbol": 1
 		},
 		"133": {
-			"name": "Taroutachi",
+			"name": "Taroutachi K.",
 			"id": 133,
 			"rarity": 4,
 			"type": 1,
@@ -1197,7 +1351,7 @@ define = {
 			"equip": 3,
 			"area": 2,
 			"upgrade": 25,
-			"symbol": 9
+			"symbol": 7
 		},
 		"134": {
 			"name": "Jiroutachi",
@@ -1211,7 +1365,7 @@ define = {
 			"symbol": 1
 		},
 		"135": {
-			"name": "Jiroutachi",
+			"name": "Jiroutachi K.",
 			"id": 135,
 			"rarity": 4,
 			"type": 1,
@@ -1219,7 +1373,7 @@ define = {
 			"equip": 3,
 			"area": 2,
 			"upgrade": 25,
-			"symbol": 9
+			"symbol": 7
 		},
 		"136": {
 			"name": "Nihongou",
@@ -1233,7 +1387,7 @@ define = {
 			"symbol": 1
 		},
 		"137": {
-			"name": "Nihongou",
+			"name": "Nihongou K.",
 			"id": 137,
 			"rarity": 5,
 			"type": 6,
@@ -1241,7 +1395,7 @@ define = {
 			"equip": 3,
 			"area": 4,
 			"upgrade": 25,
-			"symbol": 6
+			"symbol": 3
 		},
 		"138": {
 			"name": "Otegine",
@@ -1255,7 +1409,7 @@ define = {
 			"symbol": 1
 		},
 		"139": {
-			"name": "Otegine",
+			"name": "Otegine K.",
 			"id": 139,
 			"rarity": 4,
 			"type": 6,
@@ -1263,10 +1417,10 @@ define = {
 			"equip": 3,
 			"area": 4,
 			"upgrade": 25,
-			"symbol": 6
+			"symbol": 3
 		},
 		"140": {
-			"name": "Tomoegata Naginata",
+			"name": "Tomoegata",
 			"id": 140,
 			"rarity": 3,
 			"type": 3,
@@ -1277,7 +1431,7 @@ define = {
 			"symbol": 1
 		},
 		"141": {
-			"name": "Tomoegata Naginata",
+			"name": "Tomoegata K.",
 			"id": 141,
 			"rarity": 4,
 			"type": 3,
@@ -1285,10 +1439,10 @@ define = {
 			"equip": 3,
 			"area": 3,
 			"upgrade": 25,
-			"symbol": 7
+			"symbol": 6
 		},
 		"142": {
-			"name": "Mouri Toushirou",
+			"name": "Mouri",
 			"id": 142,
 			"rarity": 1,
 			"type": 7,
@@ -1299,7 +1453,7 @@ define = {
 			"symbol": 1
 		},
 		"143": {
-			"name": "Mouri Toushirou",
+			"name": "Mouri K.",
 			"id": 143,
 			"rarity": 2,
 			"type": 7,
@@ -1310,7 +1464,7 @@ define = {
 			"symbol": 2
 		},
 		"144": {
-			"name": "Kotegiri Gou",
+			"name": "Kotegiri",
 			"id": 144,
 			"rarity": 2,
 			"type": 4,
@@ -1321,7 +1475,7 @@ define = {
 			"symbol": 1
 		},
 		"145": {
-			"name": "Kotegiri Gou",
+			"name": "Kotegiri K.",
 			"id": 145,
 			"rarity": 3,
 			"type": 4,
@@ -1332,7 +1486,7 @@ define = {
 			"symbol": 3
 		},
 		"146": {
-			"name": "Kenshin Kagemitsu",
+			"name": "Kenshin",
 			"id": 146,
 			"rarity": 1,
 			"type": 7,
@@ -1343,7 +1497,7 @@ define = {
 			"symbol": 1
 		},
 		"147": {
-			"name": "Kenshin Kagemitsu",
+			"name": "Kenshin K.",
 			"id": 147,
 			"rarity": 2,
 			"type": 7,
@@ -1354,7 +1508,7 @@ define = {
 			"symbol": 2
 		},
 		"148": {
-			"name": "Azuki Nagamitsu",
+			"name": "Azuki",
 			"id": 148,
 			"rarity": 3,
 			"type": 2,
@@ -1364,8 +1518,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"149": {
+			"name": "Azuki K.",
+			"id": 149,
+			"rarity": 4,
+			"type": 2,
+			"group": 11,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"150": {
-			"name": "Hyuuga Masamune",
+			"name": "Hyuuga",
 			"id": 150,
 			"rarity": 1,
 			"type": 7,
@@ -1376,7 +1541,7 @@ define = {
 			"symbol": 1
 		},
 		"151": {
-			"name": "Hyuuga Masamune",
+			"name": "Hyuuga K.",
 			"id": 151,
 			"rarity": 2,
 			"type": 7,
@@ -1387,7 +1552,7 @@ define = {
 			"symbol": 2
 		},
 		"152": {
-			"name": "Shizukagata Naginata",
+			"name": "Shizukagata",
 			"id": 152,
 			"rarity": 3,
 			"type": 3,
@@ -1398,7 +1563,7 @@ define = {
 			"symbol": 1
 		},
 		"153": {
-			"name": "Shizukagata Naginata",
+			"name": "Shizukagata K.",
 			"id": 153,
 			"rarity": 4,
 			"type": 3,
@@ -1406,10 +1571,10 @@ define = {
 			"equip": 3,
 			"area": 3,
 			"upgrade": 25,
-			"symbol": 7
+			"symbol": 6
 		},
 		"154": {
-			"name": "Nansen Ichimonji",
+			"name": "Nansen",
 			"id": 154,
 			"rarity": 2,
 			"type": 5,
@@ -1420,7 +1585,7 @@ define = {
 			"symbol": 1
 		},
 		"155": {
-			"name": "Nansen Ichimonji",
+			"name": "Nansen K.",
 			"id": 155,
 			"rarity": 3,
 			"type": 5,
@@ -1441,8 +1606,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"157": {
+			"name": "Chiyoganemaru",
+			"id": 157,
+			"rarity": 4,
+			"type": 2,
+			"group": 1,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 9
+		},
 		"158": {
-			"name": "Yamanbagiri Chougi",
+			"name": "Chougi",
 			"id": 158,
 			"rarity": 2,
 			"type": 5,
@@ -1453,7 +1629,7 @@ define = {
 			"symbol": 1
 		},
 		"159": {
-			"name": "Yamanbagiri Chougi",
+			"name": "Chougi K.",
 			"id": 159,
 			"rarity": 3,
 			"type": 5,
@@ -1464,7 +1640,7 @@ define = {
 			"symbol": 4
 		},
 		"160": {
-			"name": "Buzen Gou",
+			"name": "Buzen",
 			"id": 160,
 			"rarity": 2,
 			"type": 5,
@@ -1475,7 +1651,7 @@ define = {
 			"symbol": 1
 		},
 		"161": {
-			"name": "Buzen Gou",
+			"name": "Buzen K.",
 			"id": 161,
 			"rarity": 3,
 			"type": 5,
@@ -1497,7 +1673,7 @@ define = {
 			"symbol": 1
 		},
 		"163": {
-			"name": "Nenekirimaru",
+			"name": "Nenekirimaru K.",
 			"id": 163,
 			"rarity": 4,
 			"type": 1,
@@ -1505,10 +1681,10 @@ define = {
 			"equip": 3,
 			"area": 2,
 			"upgrade": 25,
-			"symbol": 9
+			"symbol": 7
 		},
 		"164": {
-			"name": "Hakusan Yoshimitsu",
+			"name": "Hakusan",
 			"id": 164,
 			"rarity": 4,
 			"type": 8,
@@ -1519,7 +1695,7 @@ define = {
 			"symbol": 1
 		},
 		"166": {
-			"name": "Nankaitarou Chouson",
+			"name": "Nankaitarou",
 			"id": 166,
 			"rarity": 2,
 			"type": 5,
@@ -1530,7 +1706,7 @@ define = {
 			"symbol": 1
 		},
 		"167": {
-			"name": "Nankaitarou Chouson",
+			"name": "Nankaitarou K.",
 			"id": 167,
 			"rarity": 3,
 			"type": 5,
@@ -1541,7 +1717,7 @@ define = {
 			"symbol": 4
 		},
 		"168": {
-			"name": "Hizen Tadahiro",
+			"name": "Hizen",
 			"id": 168,
 			"rarity": 2,
 			"type": 4,
@@ -1552,7 +1728,7 @@ define = {
 			"symbol": 1
 		},
 		"169": {
-			"name": "Hizen Tadahiro",
+			"name": "Hizen K.",
 			"id": 169,
 			"rarity": 3,
 			"type": 4,
@@ -1574,7 +1750,7 @@ define = {
 			"symbol": 1
 		},
 		"171": {
-			"name": "Chatannakiri",
+			"name": "Chatannakiri K.",
 			"id": 171,
 			"rarity": 2,
 			"type": 7,
@@ -1585,7 +1761,7 @@ define = {
 			"symbol": 2
 		},
 		"172": {
-			"name": "Kuwana Gou",
+			"name": "Kuwana",
 			"id": 172,
 			"rarity": 2,
 			"type": 5,
@@ -1596,7 +1772,7 @@ define = {
 			"symbol": 1
 		},
 		"173": {
-			"name": "Kuwana Gou",
+			"name": "Kuwana K.",
 			"id": 173,
 			"rarity": 3,
 			"type": 5,
@@ -1607,7 +1783,7 @@ define = {
 			"symbol": 4
 		},
 		"174": {
-			"name": "Suishinshi Masahide",
+			"name": "Suishinshi",
 			"id": 174,
 			"rarity": 2,
 			"type": 5,
@@ -1618,7 +1794,7 @@ define = {
 			"symbol": 1
 		},
 		"175": {
-			"name": "Suishinshi Masahide",
+			"name": "Suishinshi K.",
 			"id": 175,
 			"rarity": 3,
 			"type": 5,
@@ -1629,7 +1805,7 @@ define = {
 			"symbol": 4
 		},
 		"176": {
-			"name": "Minamoto Kiyomaro",
+			"name": "Minamoto",
 			"id": 176,
 			"rarity": 2,
 			"type": 5,
@@ -1640,7 +1816,7 @@ define = {
 			"symbol": 1
 		},
 		"177": {
-			"name": "Minamoto Kiyomaro",
+			"name": "Minamoto K.",
 			"id": 177,
 			"rarity": 3,
 			"type": 5,
@@ -1651,7 +1827,7 @@ define = {
 			"symbol": 4
 		},
 		"178": {
-			"name": "Matsui Gou",
+			"name": "Matsui",
 			"id": 178,
 			"rarity": 2,
 			"type": 5,
@@ -1662,7 +1838,7 @@ define = {
 			"symbol": 1
 		},
 		"179": {
-			"name": "Matsui Gou",
+			"name": "Matsui K.",
 			"id": 179,
 			"rarity": 3,
 			"type": 5,
@@ -1694,8 +1870,19 @@ define = {
 			"upgrade": 25,
 			"symbol": 1
 		},
+		"183": {
+			"name": "Kokindenjunotachi K.",
+			"id": 183,
+			"rarity": 5,
+			"type": 2,
+			"group": 19,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
+		},
 		"184": {
-			"name": "Jizou Yukihira",
+			"name": "Jizou",
 			"id": 184,
 			"rarity": 2,
 			"type": 5,
@@ -1706,7 +1893,7 @@ define = {
 			"symbol": 1
 		},
 		"185": {
-			"name": "Jizou Yukihira",
+			"name": "Jizou K.",
 			"id": 185,
 			"rarity": 3,
 			"type": 5,
@@ -1728,7 +1915,7 @@ define = {
 			"symbol": 1
 		},
 		"187": {
-			"name": "Chiganemaru",
+			"name": "Chiganemaru K.",
 			"id": 187,
 			"rarity": 3,
 			"type": 4,
@@ -1739,7 +1926,7 @@ define = {
 			"symbol": 3
 		},
 		"188": {
-			"name": "Nikkou Ichimonji",
+			"name": "Nikkou",
 			"id": 188,
 			"rarity": 4,
 			"type": 2,
@@ -1748,6 +1935,17 @@ define = {
 			"area": 1,
 			"upgrade": 25,
 			"symbol": 1
+		},
+		"189": {
+			"name": "Nikkou K.",
+			"id": 188,
+			"rarity": 5,
+			"type": 2,
+			"group": 18,
+			"equip": 3,
+			"area": 1,
+			"upgrade": 25,
+			"symbol": 10
 		}
 	},
 	"groups": {
@@ -2053,13 +2251,13 @@ define = {
 		"4" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1932413, 2433071, 2988719, 3596081, 4251881, 4952843, 5695691, 6477149, 7293941, 8142791, 9020423, 9923561, 10848929, 11793251, 12753251, 13715279, 14679967, 15647943, 16619837, 17596280, 18577900, 19565329, 20559194, 21560126, 22568755, 23585710, 24611623, 25647121, 26692834, 27749393, 28817428, 29897567, 30990441, 32096679, 33216911, 34351768, 35501878, 36667871, 37850378, 39050027, 40267449, 41503274, 42758131, 44032649, 45327459, 46643191, 47980473, 49339936, 50722210, 52127924, 53557707, 55012190, 56492002, 57997774, 59530135, 61089715, 62677143, 64293049, 65938063, 67612814, 69317932, 71054048, 72821791, 74621791, 0],
 		//kiwame uchigatana exp (r4)
 		"5" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 2093448, 2635828, 3237780, 3895755, 4606205, 5365581, 6170333, 7016912, 7901770, 8821358, 9772126, 10750525, 11753007, 12776023, 13816023, 14858220, 15903297, 16951938, 18004824, 19062637, 20126059, 21195773, 22272460, 23356803, 24449484, 25551186, 26662591, 27784381, 28917237, 30061843, 31218881, 32389032, 33572978, 34771402, 35984988, 37214416, 38460368, 39723528, 41004576, 42304197, 43623070, 44961880, 46321308, 47702037, 49104748, 50530123, 51978846, 53451598, 54949061, 56471918, 58020850, 59596539, 61199669, 62830922, 64490979, 66180524, 67900239, 69650803, 71432901, 73247215, 75094427, 76975219, 78890273, 80840274, 0],
-		//kiwame yari exp
-		"6" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
-		//kiwame naginata exp
-		"7" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
-		//kiwame tachi exp
-		"8" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
 		//kiwame oodachi exp
-		"9" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 2415518, 3041340, 3735900, 4495103, 5314853, 6191055, 7119615, 8096438, 9117428, 10178490, 11275530, 12404453, 13561163, 14741565, 15941565, 17144100, 18349959, 19559930, 20774798, 21995351, 23222376, 24456662, 25698993, 26950158, 28210944, 29482139, 30764529, 32058902, 33366044, 34686743, 36021786, 37371960, 38738052, 40120850, 41521140, 42939711, 44377349, 45834840, 47312973, 48812535, 50334312, 51879093, 53447664, 55040813, 56659325, 58303989, 59975592, 61674921, 63402764, 65159906, 66947135, 68765238, 70615004, 72497219, 74412669, 76362144, 78346430, 80366312, 82422579, 84516018, 86647416, 88817561, 91027239, 93277239, 0],
+		"6" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 2415518, 3041340, 3735900, 4495103, 5314853, 6191055, 7119615, 8096438, 9117428, 10178490, 11275530, 12404453, 13561163, 14741565, 15941565, 17144100, 18349959, 19559930, 20774798, 21995351, 23222376, 24456662, 25698993, 26950158, 28210944, 29482139, 30764529, 32058902, 33366044, 34686743, 36021786, 37371960, 38738052, 40120850, 41521140, 42939711, 44377349, 45834840, 47312973, 48812535, 50334312, 51879093, 53447664, 55040813, 56659325, 58303989, 59975592, 61674921, 63402764, 65159906, 66947135, 68765238, 70615004, 72497219, 74412669, 76362144, 78346430, 80366312, 82422579, 84516018, 86647416, 88817561, 91027239, 93277239, 0],
+		//kiwame yari exp
+		"7" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
+		//kiwame naginata exp
+		"8" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
+		//kiwame tachi exp
+		"9" : [0, 588, 1305, 2194, 3296, 4653, 6307, 8300, 10673, 13468, 16727, 20491, 24802, 29702, 35233, 41436, 48354, 56027, 64498, 73808, 84000, 95114, 107193, 120278, 134411, 149634, 165989, 183517, 202260, 222260, 307195, 454335, 660950, 924310, 1241685, 1771379, 2230316, 2739660, 3296408, 3897558, 4540107, 5221051, 5937387, 6686113, 7464226, 8268722, 9096598, 9944852, 10810481, 11690481, 12572340, 13456636, 14343948, 15234851, 16129923, 17029742, 17934885, 18845928, 19763449, 20688025, 21620235, 22560654, 23509861, 24468432, 25436944, 26415976, 27406104, 28407904, 29421956, 30448836, 31489121, 32543389, 33612216, 34696180, 35795859, 36911829, 38044668, 39194953, 40363262, 41550171, 42756258, 43982101, 45228275, 46495360, 47783930, 49094565, 50427841, 51784336, 53164627, 54569290, 55998905, 57454048, 58935295, 60443224, 61978413, 63541438, 65132878, 66753308, 68403309, 0],
 	}
 }

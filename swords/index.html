@@ -11,6 +11,71 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body onload="modDate('mod')">
+  <iframe id="git" src="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases/tag/" style="height:380px;width:100%"></iframe>
+  <div class="top-nav">
+      <div class="switch-tab">
+	    <div class="main-menu">
+          <div class="menu-cover">
+            <a href="../index.md">Home</a>
+          </div>
+          <!--div class="menu-inner party" v-for='i in 4' :key="i" :data-party="i" @click="scroll('party-' + i)" :class="party.parties[i].status | party-status">
+            Team No. {{ i }}<br>
+            <small v-if="party.parties[i]">
+              A.<span>{{ party.parties[i].averageLevel }}</span> / T.<span>{{ party.parties[i].totalLevel }}</span>
+            </small>
+            <small v-else>Not Available</small>
+          </div-->
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            <a href="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases">Touken Ranbu Helper LITE</a>
+          </div>
+          <div class="menu-inner">
+            <a id="cr">Google Chrome</a>
+          </div>
+          <div class="menu-inner">
+            <a id="ff">Mozilla Firefox</a>
+          </div>
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            Citadel
+          </div>
+          <div class="menu-inner" @click="scroll('equip')">
+            Troops &amp; Horses
+          </div>
+          <div class="menu-inner" @click="scroll('forge')">
+            Smithing &amp; Repair
+          </div>
+          <div class="menu-inner" @click="scroll('all-swords')">
+            Sword Library
+          </div>
+          <div class="menu-inner" @click="scroll('duty')">
+            IA &amp; Kiwame Training
+          </div>
+          <div class="menu-inner" @click="scroll('item')">
+            Tools Inventory
+          </div>
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            Logs
+          </div>
+          <div class="menu-inner" @click="scroll('forge-log')">
+            Smithing Log
+          </div>
+          <div class="menu-inner" @click="scroll('battle-log')">
+            Battle Log
+          </div>
+          <div class="menu-inner" @click="scroll('practice-log')">
+            Practice Log
+          </div>
+          <div class="menu-inner" @click="scroll('duty-log')">
+            IA Log
+          </div>
+		</div>
+      </div>
+    </div>
   <div class="info-page">
 	<div class="title"><small>Swords List</small></div>
 	<div class="textbox">
@@ -63,8 +128,13 @@
             
             </tbody>
           </table>
-        </div>
-		<footer>Last updated on <span id="mod"></span><br /></footer>
+		</div>
+		<footer>Last updated on <span id="mod"></span><br />
+			<ul>
+				<li>Corrected R3 Uchis' (Ookuri, Izumi, Douda) type to "Uchigatana" from old "Tachi"</li>
+				<li>Added Navigation Bar (still a work in progress)</li>
+			</ul>
+		</footer>
       </div>
   </div>
 </body>

@@ -24,11 +24,24 @@ function sf(value) {
 	}
 }
 
+function auto(value,rec,now) {
+	if (value<50) {
+		//in time passed in minutes
+		var diff = Math.round((Date.parse(now.replace(/-/g,"/")+" +900") - Date.parse(rec.replace(/-/g,"/")+" +0900"))/1000/60);
+		return ((value + (parseInt(diff/3)*3)) >= 49 ? 49 : value + (parseInt(diff/3)*3))
+	} else {
+		return value
+	}
+}
 function modDate(id) {
 	var date = new Date(document.lastModified);
-	var ddd = new Date();
-	console.log(ddd);
 	document.getElementById(id).innerHTML = date.toLocaleString();
+	var link = "https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases/tag/";
+	var iframe = document.getElementById("git");
+	var vers = 1.0;
+	
+	document.getElementById("cr").href = link + "CR_";
+	document.getElementById("ff").href = link + "FF_";
 }
 
 function hide(btn) {
@@ -78,6 +91,8 @@ function display() {
 		var exp = response.sword[toudan].exp;
 		var rarity = response.sword[toudan].rarity;
 		var charm = response.sword[toudan].item_id ? (response.sword[toudan].item_id == 2 ? "Omamori Kyoku":"Omamori") : "";
+		var recovery = response.sword[toudan].recovered_at;
+		var now = response.now;
 		for (var h in response.equip) {
 			
 		}
@@ -132,8 +147,8 @@ function display() {
 			var next_exp = "";
 		}
 		// computations
-		var days = new Date() - Date.parse(birth.replace(/-/g,"/")+" +0900");
-		days = Math.round(days/1000/60/60/24);
+		var millisecs = new Date() - Date.parse(birth.replace(/-/g,"/")+" +0900");
+		days = Math.round(millisecs/1000/60/60/24);
 		// display, only if locked
 		if (lock=="1") {
 			row = table.insertRow(-1);
@@ -155,7 +170,7 @@ function display() {
 			row.insertCell(15).innerHTML = camouflage;
 			row.insertCell(16).innerHTML = range;
 			row.insertCell(17).innerHTML = loyalty;
-			row.insertCell(18).innerHTML = sf(fatigue);
+			row.insertCell(18).innerHTML = sf(auto(fatigue,recovery,now));
 			row.insertCell(19).innerHTML = troops;
 			row.insertCell(20).innerHTML = charm;
 			row.insertCell(21).innerHTML = horse;
