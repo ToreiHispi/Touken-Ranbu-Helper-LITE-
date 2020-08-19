@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="assets/main.css">
+  </head>
+  <body id="app">
+    <ul class="top">
+      <li>Saniwa<b v-if="view.player.name!=null">{{view.player.name}}</b></li>
+      <li v-if="view.player.level!=null">Lv.<b>{{view.player.level}}</b></li>
+      <li v-if="!view.resource.set">No data found, please go to 鍛刀(Smithing) tab.</li>
+      <li v-if="view.resource.charcoal!=null">Charcoal<b>{{Math.floor(view.resource.charcoal)}}</b></li>
+      <li v-if="view.resource.steel!=null">Steel<b>{{Math.floor(view.resource.steel)}}</b></li>
+      <li v-if="view.resource.coolant!=null">Coolant<b>{{Math.floor(view.resource.coolant)}}</b></li>
+      <li v-if="view.resource.file!=null">Whetstone<b>{{Math.floor(view.resource.file)}}</b></li>
+      <li v-if="view.resource.bill!=null">Req T.<b>{{Math.floor(view.resource.bill)}}</b></li>
+      <li v-if="view.resource.bonemeal!=null">Help T.<b>{{Math.floor(view.resource.bonemeal)}}</b></li>
+      <li v-if="view.resource.money!=null">Koban<b>{{Math.floor(view.resource.money)}}</b></li>
+    </ul>
+    <ul class="nav">
+      <li v-class="active: tab == 2" v-on="click: tab = 2">Parties</li>
+      <li v-class="active: tab == 3" v-on="click: tab = 3">Citadel</li>
+      <li v-class="active: tab == 5" v-on="click: tab = 5">Logs</li>
+      <li v-class="active: tab == -1" v-on="click: tab = -1">Settings</li>
+      <li v-class="active: tab == -2" v-on="click: tab = -2">Credits</li>
+    </ul>
+    <div class="container">
+      <div v-if="!gaming" class="outgame">This is data of the previous session.</div>
+      <!-- Team List (not found) -->
+      <div v-if="!view['party']['set']" v-show="tab==2">No data found, please go to 結成(Formation) tab.</div>
+      <!-- Team List (found) -->
+      <div v-if="view['party']['set']" v-show="tab==2">
+        <div v-if="view['party']['set']" class="party">
+          <div v-repeat="view['party']['data']" class="party-item">
+            <!-- 队伍和状态标注 (Team No. and Status) -->
+            <div class="name">Party {{party_no}}<span v-show="in_battle(party_no)" class="status"> [Sortie]</span>
+			<span v-show="status==2" class="status"> [Expedition]</span>
+			<span v-show="status==2" class="status"> [{{finished_at | conquest_time}}]</span></div>
+            <!-- 等级和兵力标注 (Avergae and Total Levels) -->
+            <div class="amounts"><span class="alv">Average Lv.<b>{{avearge_lv}}</b></span>
+			<span class="lva">Total Lv.<b>{{amount_lv}}</b></span></div>
+            <!-- 列表 (List of Team Members) -->
+            <ul class="swords">
+              <li v-repeat="slot" class="ss">
+                <div v-if="serial_id==null" class="item"><img src="../../assets/sword/0.png" class="simg">
+                  <div class="c">
+                    <div class="sname">Empty</div>
+                    <div class="slv">Lv.0 (next 0)</div>
+                  </div>
+                  <div class="c">
+                    <div class="shp">HP 0 / 0</div>
+                    <div class="sf"><span class="sfico"></span>0</div>
+                  </div>
+                  <div class="c2">
+                    <div class="sequ"><span>[Empty]</span></div>
+                  </div>
+                </div>
+                <div v-if="serial_id!=null" class="item">
+					<img v-attr="src: '../../assets/sword/' + sword_id + '.png'" class="simg">
+                  <div class="c">
+                    <div class="sname">{{name}}</div>
+                    <div class="slv"><lv>Lv.{{level}}</lv> (next {{next_exp}})</div>
+                  </div>
+                  <div class="c">
+                    <div class="shp">HP {{hp}} / {{hp_max}}<span v-show="status==1" class="ssta"> [Repair]</span>
+					<span v-show="hp/hp_max&lt;=0.9 &amp;&amp; hp/hp_max&gt;0.65 &amp;&amp; status!=1" class="ssta y"> [Light]</span>
+					<span v-show="hp/hp_max&lt;=0.65 &amp;&amp; hp/hp_max&gt;0.3 &amp;&amp; status!=1" class="ssta o"> [Moderate]</span>
+					<span v-show="hp/hp_max&lt;=0.3&amp;&amp;status!=1" class="ssta r"> [Severe]</span></div>
+                    <div class="sf"><span v-class="r: fatigue &lt; 6,y: fatigue &gt;= 6 &amp;&amp; fatigue &lt; 20,p: fatigue &gt;= 50" class="sfico"></span>
+					<span v-show="fatigue &gt;= 50">Sakura </span>
+					<span v-show="fatigue &lt; 50 &amp;&amp; fatigue &gt;= 20">Normal </span>
+					<span v-show="fatigue &lt; 20">Fatigue </span>
+					<span>{{fatigue}}</span><span v-show="fatigue &gt;= 50">(+20%)</span><span v-show="fatigue &gt;= 6 &amp;&amp; fatigue &lt; 20">(-20%)</span><span v-show="fatigue &lt; 6">(-40%)</span></div>
+                  </div>
+                  <div class="c2">
+                    <div class="sequ"><span v-if="equip_serial_id1!=null" v-class="r: equip_1['level'] == 2, ur: equip_1['level'] == 0, b: equip_1['soldier_now'] == 0">[{{equip_1['sname']}} {{equip_1['soldier_now']}}/{{equip_1['soldier_max']}}]</span><span v-if="equip_serial_id1==null&amp;&amp;max_equip&gt;=1">[Empty]</span><span v-if="equip_serial_id2!=null" v-class="r: equip_2['level'] == 2, ur: equip_2['level'] == 0, b: equip_2['soldier_now'] == 0">[{{equip_2['sname']}} {{equip_2['soldier_now']}}/{{equip_2['soldier_max']}}]</span><span v-if="equip_serial_id2==null&amp;&amp;max_equip&gt;=2">[Empty]</span><span v-if="equip_serial_id3!=null" v-class="r: equip_3['level'] == 2, ur: equip_3['level'] == 0, b: equip_3['soldier_now'] == 0">[{{equip_3['sname']}} {{equip_3['soldier_now']}}/{{equip_3['soldier_max']}}]</span><span v-if="equip_serial_id3==null&amp;&amp;max_equip&gt;=3">[Empty]</span></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+	  <!-- Citadel tab -->
+      <div v-if="tab==3" class="forge-rep">
+        <div class="panel fr">
+          <div class="t">Armory</div>
+          <div v-show="!view['equips']['set']" class="amounts">No data found, please go to 結成(Formation) tab.</div>
+          <ul v-if="view['equips']['set']" class="equ">
+            <li v-repeat="view['equips']['data']">[{{$key | e2n}}] Total {{$value}}</li>
+          </ul>
+        </div>
+        <div class="panel fr">
+          <div class="t">Smithing<span style="cursor: pointer;" v-on="click: toggleForge" class="alv">[Click to view prediction]</span></div>
+          <div class="amounts"><span class="alv">Workshop: <b>{{data['forge']['open']}}</b></span><span class="lva">In use: <b>{{checkout('forge')}}</b></span></div>
+          <ul class="equ">
+            <li v-repeat="data['forge']['data']">[{{finished_at | tt2lt}}] {{sword_id | fs2n}}</li>
+          </ul>
+        </div>
+        <div class="panel fr">
+          <div class="t">Repair</div>
+          <div class="amounts"><span class="alv">Workshop: <b>{{data['repair']['open']}}</b></span><span class="lva">In use: <b>{{checkout('repair')}}</b></span></div>
+		  <div class="amounts">
+			<!--span class="alv" id="testy">See?</span><br /><span class="alv" id="idhelp">[]</span
+			** add this to parse.js:
+			/* These 2 lines are for testing/debugging purposes.
+		document.getElementById("testy").innerHTML = "SSI:" + (exports.tohken.define.tohkens[w['sword_id']] ? exports.tohken.define.tohkens[w['sword_id']]['name'] : w['sword_serial_id']);
+		document.getElementById("idhelp").innerHTML = "Data:" + w['sword_id'] + " " + exports.tohken.define.tohkens[w['sword_id']]['name'];*/-->
+		  </div>
+          <ul class="equ">
+            <li v-repeat="data['repair']['data']">[{{finished_at | tt2lt}}] {{sword_serial_id | sid2n}}</li>
+          </ul>
+        </div>
+      </div>
+	  <!-- Logs tab -->
+      <div v-if="tab==5" class="logs">
+        <div class="panel">
+          <div style="cursor: pointer;" v-on="click: saveLogs()" class="t">Click to download data as Excel file</div>
+        </div>
+        <div class="panel">
+          <div class="t">Smith statistics</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Result</th>
+                <th>Smithing Duration</th>
+                <th>Charcoal</th>
+                <th>Steel</th>
+                <th>Coolant</th>
+                <th>Whetstone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-repeat="data['logs']['forge']">
+                <!-- "1-1426389451000":{"slot_no":"1","finish_at":1426389451000,"sword_id":"45","resource":false,"charcoal":"50","coolant":"50","file":"50","steel":"50"}-->
+                <td>{{finish_at | ls2t}}</td>
+                <td>{{sword_id | ls2n}}</td>
+                <td>{{resource?times:'-'}} min</td>
+                <td>{{resource?charcoal:'-'}}</td>
+                <td>{{resource?steel:'-'}}</td>
+                <td>{{resource?coolant:'-'}}</td>
+                <td>{{resource?file:'-'}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <div class="t">Drop statistics</div>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Team</th>
+                <th>Rank</th>
+                <th>Drop</th>
+                <th>Map</th>
+                <th>Nodes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-repeat="data['logs']['battle']">
+                <td>{{time | ls2t}}</td>
+                <td>{{party_no}}</td>
+                <td>{{rank | r2r}}</td>
+                <td>{{get_sword_id | ls2n}}</td>
+                <td v-if="battle_episode>=0">{{battle_episode}}-{{battle_field}}</td>
+                <td v-if="battle_episode<0">ev</td>
+                <td>{{battle_pos}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Settings tab -->
+      <div v-show="tab==-1">
+        <div class="panel-config">
+          <div class="t">Data</div>
+          <ul class="sl">
+            <li>
+              <div class="act">Turn on fatigue calculation:<span v-class="on: config.cad == 0" v-on="click: applyConfig('cad', 0)">OFF</span><span v-class="on: config.cad == 1" v-on="click: applyConfig('cad', 1)">ON</span></div>
+              <div class="desc">Data isn't 100% accurate.</div>
+              <div class="desc">Time to restore fatigue: 3 points every 3 minutes.</div>
+              <div class="desc">Normal status: 20 to 49 points.</div>
+            </li>
+            <li>
+              <div class="act">Don't turn this on.<span v-class="on: config.cadOffList == 0" v-on="click: applyConfig('cadOffList', 0)">OFF</span><span v-class="on: config.cadOffList == 1" v-on="click: applyConfig('cadOffList', 1)">ON</span></div>
+              <div class="desc">This feature isn't complete yet, don't use it.</div>
+              <div class="desc">This option was left for the convenience of debugging.</div>
+            </li>
+            <li>
+              <div class="act">Game data saving:<span v-class="on: config.dataCache == 0" v-on="click: applyConfig('dataCache', 0)">OFF</span><span v-class="on: config.dataCache == 1" v-on="click: applyConfig('dataCache', 1)">ON</span></div>
+              <div class="desc">
+                It is recommended to turn this on.
+              </div>
+              <div v-show="dataExist" v-on="click: applyConfig('dataCache', -1)" style="cursor: pointer;" class="desc">< ** Clear data ** ></div>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-config">
+          <div class="t">Notifications</div>
+          <ul class="sl">
+            <li>
+              <div class="act">Expeditions<span v-class="on: config.notify_conquest == 0" v-on="click: applyConfig('notify_conquest', 0)">OFF</span><span v-class="on: config.notify_conquest == 1" v-on="click: applyConfig('notify_conquest', 1)">5 min</span><span v-class="on: config.notify_conquest == 2" v-on="click: applyConfig('notify_conquest', 2)">2 min</span><span v-class="on: config.notify_conquest == 3" v-on="click: applyConfig('notify_conquest', 3)">30 sec</span><span v-class="on: config.notify_conquest == 4" v-on="click: applyConfig('notify_conquest', 4)">When finished</span></div>
+              <div class="desc">Notifies when your expedition is completed.</div>
+            </li>
+            <li>
+              <div class="act">Repair<span v-class="on: config.notify_repair == 0" v-on="click: applyConfig('notify_repair', 0)">OFF</span><span v-class="on: config.notify_repair == 1" v-on="click: applyConfig('notify_repair', 1)">5 min</span><span v-class="on: config.notify_repair == 2" v-on="click: applyConfig('notify_repair', 2)">2 min</span><span v-class="on: config.notify_repair == 3" v-on="click: applyConfig('notify_repair', 3)">30 sec</span><span v-class="on: config.notify_repair == 4" v-on="click: applyConfig('notify_repair', 4)">When finished</span></div>
+              <div class="desc">Notifies when repairs have finished.</div>
+			  <div class="desc">*If you use a [Help Token], the notification will remain.</div>
+            </li>
+            <li>
+              <div class="act">Damage<span v-class="on: config.notify_broken == 0" v-on="click: applyConfig('notify_broken', 0)">OFF</span><span v-class="on: config.notify_broken == 1" v-on="click: applyConfig('notify_broken', 1)">Severe</span><span v-class="on: config.notify_broken == 2" v-on="click: applyConfig('notify_broken', 2)">Moderate</span><span v-class="on: config.notify_broken == 3" v-on="click: applyConfig('notify_broken', 3)">Minor</span><span v-class="on: config.notify_broken == 4" v-on="click: applyConfig('notify_broken', 4)">Blood loss</span><span v-class="on: config.notify_broken == 5" v-on="click: applyConfig('notify_broken', 5)">Troop loss</span></div>
+              <div class="desc">Notifies when swords are injured.</div>
+              <div class="desc">Higher level injury will be included, ex: if you choose "Troop loss" then you get "Blood loss" or "Minor injury" in a fight, a notification will still be given.</div>
+            </li>
+            <li>
+              <div class="act">Sword drop<span v-class="on: config.notify_getnew == 0" v-on="click: applyConfig('notify_getnew', 0)">OFF</span><span v-class="on: config.notify_getnew == 1" v-on="click: applyConfig('notify_getnew', 1)">Rare swords</span><span v-class="on: config.notify_getnew == 2" v-on="click: applyConfig('notify_getnew', 2)">S Rare swords</span><span v-class="on: config.notify_getnew == 3" v-on="click: applyConfig('notify_getnew', 3)">ALL</span></div>
+              <div class="desc">Notifies when you get a drop.</div>
+              <div class="desc">*Rare swords: Tonbokiri, Otegine, Taroutachi, Jiroutachi, Ishikirimaru, R4 and R5 Tachis, & super rare swords.</div>
+              <div class="desc">*Super rare swords: Hirano, Atsushi, Mikazuki, Kogitsunemaru, Monoyoshi, Taikogane, Fudou, Kikkou, Akashi, Nihongou, Hotarumaru & Event special drops.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 设置-->
+      <div v-show="tab==-2">
+        <div class="panel-about">
+          <div class="t">Touken Ranbu Helper</div>
+          <ul class="sl">
+            <li>
+              <div class="desc">Version: V1.7.1 (LITE)</div>
+              <div class="desc">Build Time： Wed August 19 2020 14:28:52 GMT+0900 (Japan Standard Time)</div>
+              <div class="desc">Repository：<a href="https://github.com/ToreiHispi/touken-helper-LITE">GitHub Repo for TKRB Helper LITE</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-about">
+          <div class="t">STAFF</div>
+          <ul class="sl">
+            <li>
+              <div class="act">Original Creator</div>
+              <div class="desc"><a href="http://weibo.com/moelynn" target="_blank">@毫无存在感的凌</a></div>
+            </li>
+			<li>
+              <div class="act">Current Undertaker</div>
+              <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/User:Tangelor142" target="_blank">Tangelor142</a></div>
+            </li>
+            <li>
+              <div class="act">Previous Contributors</div>
+              <div class="desc"><a href="http://weibo.com/NKSan" target="_blank">@1tuka</a></div>
+              <div class="desc"><a href="http://weibo.com/u/2206048461" target="_blank">@生亦求喂食</a></div>
+              <div class="desc"><a href="http://weibo.com/sr34v5" target="_blank">@Rabbit_仙鹤归家w</a></div>
+              <div class="desc"><a href="http://weibo.com/moyuchaoren" target="_blank">@茈予-安详地舔舔舔</a></div>
+              <div class="desc"><a href="http://weibo.com/koei327" target="_blank">@常暗_PETY亚洲善待山姥切国広组</a></div>
+            </li>
+			<li>
+              <div class="act">Previous Translators</div>
+              <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/User:Oredare" target="_blank">Oredare</a></div>
+              <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/User:Maitou" target="_blank">Maitou</a></div>
+              <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/User:Seijuros" target="_blank">Seijuros</a></div>
+              <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/User:Miiandering" target="_blank">Miiandering</a></div>
+            </li>
+            <li>
+              <div class="act">Thanks</div>
+              <div class="desc">Touken Ranbu Information</div>
+              <div class="desc"><a href="http://wikiwiki.jp/toulove" target="_blank">Toulove</a></div>
+			  <div class="desc"><a href="https://touken-ranbu.fandom.com/wiki/Touken_Ranbu_Wiki" target="_blank">Touken Ranbu ENG Wiki</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-about">
+          <div class="t">Currently Known BUGS</div>
+          <ul class="sl">
+            <li>
+              <div class="act">Fatigue Levels may exceed 100% when returning to Honmaru. Going to Team Formation fixes for now.</div>
+              <div class="act">Swords not in SF may show incorrect fatigue levels until they sortie.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-about">
+          <div class="t">Change Log</div>
+          <ul class="sl">
+			<li>
+              <div class="act">v1.7.1 20200819</div>
+			  <div class="desc">Tachiwame exp map was missing the last table entry for leveling 98 -> 99.</div>.</div>
+            </li>
+			<li>
+              <div class="act">v1.7 20200819</div>
+			  <div class="desc">Fixed Nihongou rarity rating from 3->4 and 4->5 for kiwame form along with proper equip quantities.</div>
+			  <div class="desc">Fixed the original three R3 Uchigatana's type from 'Tachi' to 'Uchigatana'.</div>
+			  <div class="desc">Included missing Kiwame Sayo crest.</div>
+			  <div class="desc">Added Tachiwame sword info and exp map.</div>
+            </li>
+			<li>
+              <div class="act">v1.6 20200810</div>
+			  <div class="desc">Added new sword #188 Nikkou Ichimonji</div>
+            </li>
+			<li>
+              <div class="act">v1.5.1 20200801</div>
+			  <div class="desc">Added new sword #186/187 crest.</div>
+              <div class="desc">Fixed spelling mistakes in last versions patch notes.</div>
+            </li>
+			<li>
+              <div class="act">v1.5 20200801</div>
+			  <div class="desc">Added new sword Chiganemaru.</div>
+              <div class="desc">Resized sword icons 182/184.</div>
+              <div class="desc">Fixed Firefox Date/Time errors caused by difference in browsers' handling of "Date" Objects. Chrome handles Date parsing differently than Firefox and other browsers.</div>
+            </li>
+            <li>
+              <div class="act">v1.4 20200430</div>
+              <div class="desc">Updated rare drop list to include event drops.</div>
+              <div class="desc">Added new swords Jizou Yukihira and Kokindenjunotachi.</div>
+            </li>
+			<li>
+              <div class="act">v1.3 20200416</div>
+              <div class="desc">Updated rare drop list to include event drops.</div>
+              <div class="desc">Fixed a bug where the Helper would break upon entering the "Repair" Room.</div>
+			  <div class="desc">Added placeholders for new upcoming swords so that the helper won't break when they are released.</div>
+            </li>
+            <li>
+              <div class="act">v1.2 20200336</div>
+              <div class="desc">Fixed Kuwana Gou experience points.</div>
+              <div class="desc">Reimplemented LITE-Patch for Kuwana Gou experience fix</div>
+            </li>
+            <li>
+              <div class="act">v1.1 20200313</div>
+              <div class="desc">Releases now have an official Firefox version!</div>
+			  <div class="desc">Fixed version numbering now that FF version is out</div>
+            </li>
+            <li>
+              <div class="act">v0.4.5* 20200301</div>
+              <div class="desc">Added all swords and crests up to #180 Sanchoumou (including #21 Onimaru Kunitsuna</div>
+              <div class="desc">Added new horse Iwaigogou, gift from Mission K10 for 5th Saniwa Anniversary.</div>
+              <div class="desc">Changed download link from Google Drive to GitHub (easier to update)<a href="https://github.com/ToreiHispi/touken-helper-LITE/releases" target="_blank" /></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../../thirdparty/FileSaver.js"></script>
+    <script src="../../thirdparty/lodash.js"></script>
+    <script src="../../thirdparty/jquery.js"></script>
+    <script src="../../thirdparty/vue.js"></script>
+    <script src="../../thirdparty/aes.js"></script>
+    <script src="../../thirdparty/pad-nopadding-min.js"></script>
+    <script src="./app/define.js"></script>
+    <script src="./app/data.js"></script>
+    <script src="./app/config.js"></script>
+    <script src="./app/store.js"></script>
+    <script src="./app/event.js"></script>
+    <script src="./app/parse.js"></script>
+    <script src="./app/router.js"></script>
+    <script src="./app/view.js"></script>
+    <script src="./app/app.js"></script>
+  </body>
+</html>
