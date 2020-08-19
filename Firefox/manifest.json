@@ -1,11 +1,7 @@
 {
   "name": "Tohken Ranbu Helper(Beta)",
   "manifest_version": 2,
-<<<<<<< HEAD
   "version": "1.7.2",
-=======
-  "version": "1.7.1",
->>>>>>> 6e2755c3b9dea0bc1f5c19599468a926966810cd
   "devtools_page": "devtools/devtools.html",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
   "web_accessible_resources": ["*",	"assets/icon.png"],

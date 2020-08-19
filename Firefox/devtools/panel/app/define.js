@@ -96,7 +96,7 @@
 		"equip": 3,
 		"area": 2,
 		"upgrade": 25,
-		"symbol": 7
+		"symbol": 6
 	},
 	"9": {
 		"name": "Iwatooshi",
@@ -118,7 +118,7 @@
 		"equip": 3,
 		"area": 3,
 		"upgrade": 25,
-		"symbol": 6
+		"symbol": 8
 	},
 	"11": {
 		"name": "Imanotsurugi",
@@ -624,7 +624,7 @@
 		"equip": 3,
 		"area": 2,
 		"upgrade": 25,
-		"symbol": 7
+		"symbol": 6
 	},
 	"61": {
 		"name": "Aizen",
@@ -690,7 +690,7 @@
 		"equip": 3,
 		"area": 4,
 		"upgrade": 25,
-		"symbol": 3
+		"symbol": 7
 	},	
 	"67": {
 		"name": "Monoyoshi",
@@ -1394,7 +1394,7 @@
 		"equip": 3,
 		"area": 2,
 		"upgrade": 25,
-		"symbol": 7
+		"symbol": 6
 	},
 	"134": {
 		"name": "Jiroutachi",
@@ -1416,7 +1416,7 @@
 		"equip": 3,
 		"area": 2,
 		"upgrade": 25,
-		"symbol": 7
+		"symbol": 6
 	},
 	"136": {
 		"name": "Nihongou",
@@ -1438,7 +1438,7 @@
 		"equip": 3,
 		"area": 4,
 		"upgrade": 25,
-		"symbol": 3
+		"symbol": 7
 	},
 	"138": {
 		"name": "Otegine",
@@ -1460,7 +1460,7 @@
 		"equip": 3,
 		"area": 4,
 		"upgrade": 25,
-		"symbol": 3
+		"symbol": 7
 	},
 	"140": {
 		"name": "Tomoegata",
@@ -1482,7 +1482,7 @@
 		"equip": 3,
 		"area": 3,
 		"upgrade": 25,
-		"symbol": 6
+		"symbol": 8
 	},
 	"142": {
 		"name": "Mouri",
@@ -1614,7 +1614,7 @@
 		"equip": 3,
 		"area": 3,
 		"upgrade": 25,
-		"symbol": 6
+		"symbol": 8
 	},
 	"154": {
 		"name": "Nansen",
@@ -1724,7 +1724,7 @@
 		"equip": 3,
 		"area": 2,
 		"upgrade": 25,
-		"symbol": 7
+		"symbol": 6
 	},
 	"164": {
 		"name": "Hakusan",
