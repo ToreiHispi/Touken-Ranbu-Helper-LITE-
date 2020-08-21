@@ -11,7 +11,11 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body onload="modDate('mod')">
-  <iframe id="git" src="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases/tag/" style="height:380px;width:100%"></iframe>
+ <?php
+	foreach ($_POST as $k => $v) {
+		echo "Field ".htmlspecialchars($k)." is ".htmlspecialchars($v)."<br />";
+	}
+ ?>
   <div class="top-nav">
       <div class="switch-tab">
 	    <div class="main-menu">
