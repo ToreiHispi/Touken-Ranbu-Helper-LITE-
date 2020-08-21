@@ -11,7 +11,10 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body onload="modDate('mod')">
-  <iframe id="git" src="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases/tag/" style="height:380px;width:100%"></iframe>
+ <?php
+	$gh = json_decode(file_get_contents("php://input");
+	echo $gh;
+ ?>
   <div class="top-nav">
       <div class="switch-tab">
 	    <div class="main-menu">
@@ -131,8 +134,7 @@
 		</div>
 		<footer>Last updated on <span id="mod"></span><br />
 			<ul>
-				<li>Corrected R3 Uchis' (Ookuri, Izumi, Douda) type to "Uchigatana" from old "Tachi"</li>
-				<li>Added Navigation Bar (still a work in progress)</li>
+				<li>Fixed big swords mismatched EXP maps</li>
 			</ul>
 		</footer>
       </div>
