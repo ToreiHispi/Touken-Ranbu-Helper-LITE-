@@ -12,8 +12,14 @@
 </head>
 <body onload="modDate('mod')">
  <?php
+<<<<<<< HEAD
 	$gh = json_decode(file_get_contents("php://input");
 	echo $gh;
+=======
+	foreach ($_POST as $k => $v) {
+		echo "Field ".htmlspecialchars($k)." is ".htmlspecialchars($v)."<br />";
+	}
+>>>>>>> a5ffa9f560cb988c6349d3ffdd01f645909bea4a
  ?>
   <div class="top-nav">
       <div class="switch-tab">
