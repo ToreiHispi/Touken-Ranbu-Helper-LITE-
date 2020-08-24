@@ -13,7 +13,31 @@ body {
   background-image: url("swords/ui/bgs.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-attachment: fixed;
   min-height: 100%;
+}
+
+.container {
+	width: 60%;
+	padding-top: 80px;
+	padding-left: 20%;
+	position: relative;
+}
+
+.container::before {
+	content: "";
+	background-image: url("smallPromo.jpg");
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: 60% 60%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	opacity: 40%;
+	z-index: -5;
 }
 
 .top-nav {
@@ -88,11 +112,6 @@ body {
   text-align: center;
 }
 
-.container {
-	width: 60%;
-	padding-top: 80px;
-	padding-left: 25%;
-}
 
 h3 {
 	font-size: 150%;
