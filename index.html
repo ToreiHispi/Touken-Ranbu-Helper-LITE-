@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Touken Ranbu Tools</title>
+	<link rel="stylesheet" href="swords/style/normalize.css">
+	<!--link rel="stylesheet" href="swords/style/appmain.css"-->
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="top-nav">
+      <div class="switch-tab">
+	    <div class="main-menu">
+          <div class="menu-cover">
+            <a href="#" disabled>Home</a>
+          </div>
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            <a href="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-">Touken Ranbu Helper LITE</a>
+          </div>
+          <div class="menu-inner">
+            Google Chrome
+				<div class="inner-popout">
+					<a id="crZIP">Packaged .ZIP</a>
+					<a id="crCRX">Web Store File</a>
+				</div>
+          </div>
+          <div class="menu-inner">
+            Mozilla Firefox
+			<div class="inner-popout">
+				<a id="ffZIP">Packaged .ZIP</a>
+				<a id="ffFXI">Web Apps File</a>
+			</div>
+          </div>
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            <a href="swords/index.html">Sword Stats Viewer</a>
+          </div>
+          <!--div class="menu-inner" @click="scroll('equip')">
+            Troops &amp; Horses
+          </div>
+          <div class="menu-inner" @click="scroll('forge')">
+            Smithing &amp; Repair
+          </div>
+          <div class="menu-inner" @click="scroll('all-swords')">
+            Sword Library
+          </div>
+          <div class="menu-inner" @click="scroll('duty')">
+            IA &amp; Kiwame Training
+          </div>
+          <div class="menu-inner" @click="scroll('item')">
+            Tools Inventory
+          </div-->
+		</div>
+		<div class="main-menu">
+          <div class="menu-cover">
+            Logs
+          </div>
+          <!--div class="menu-inner" @click="scroll('forge-log')">
+            Smithing Log
+          </div>
+          <div class="menu-inner" @click="scroll('battle-log')">
+            Battle Log
+          </div>
+          <div class="menu-inner" @click="scroll('practice-log')">
+            Practice Log
+          </div>
+          <div class="menu-inner" @click="scroll('duty-log')">
+            IA Log
+          </div-->
+		</div>
+      </div>
+    </div>
+	<div class="container">
+		<h2 class="title">Welcome to Torei Hispi's Touken Ranbu Tools</h2>
+
+		This site will provide you access to useful tools that enhance the Touken Ranbu PC playing experience.
+
+		<h3>Touken Ranbu Web Tools</h3>
+		<p>Hereare some web applications that provided useful information tracking when playing the game.</p>
+		<small>Note: They may require some manual operation.</small>
+		<ul>
+			<li><b>Sword Stats</b>: Displays the current stats and status of your sword list.</li>
+			<li><b>TKRB Tracker</b>: For events like Village of Treasures, Regiment Battle, etc.</li>
+		</ul>
+
+		<h3>Touken Ranbu Helper LITE</h3>
+		<p>The original Helper was made by weibo user moelynn, then translated into English by Oredare, Maitou, Seijuros, and Miiandering.<br />
+		This version supports Google Chrome and Mozilla Firefox. </p>
+
+		<p>This is the basic, light-weight Touken Ranbu Helper that display critical Citadel information such as:</p>
+		<ul>
+			<li> Party status (HP, Level, Fatigue values, Experience, Troops Health)</li>
+			<li>Equip Inventory</li>
+			<li>Smithing Results</li>
+			<li>Repairs Queue</li>
+			<li>Computer notifications on sword damage, drops, and expedition/repairs conclusion.</li>
+		</ul>
+
+		<h4>How to Install</h4>
+
+		<div>
+			<h5>Download</h5>
+
+			<b>Github Releases: <a href="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-/releases">Touken Ranbu Helper LITE</a></b></b>
+
+			<ol>
+				<li>For Chrome: Download and extract the .zip/.rar to your hard drive (the .zip/.rar contains a folder named 'Touken Ranbu Helper')</li>
+				<li>For Firefox: Simply download the .zip (do not extract), or instead, download the .xpi to your hard drive</li>
+			</ol>
+			<h5>Load on Chrome</h5>
+			<ol>
+				<li>Open Google Chrome</li>
+				<li>Open the Chrome menu > More Tools > Extensions to view the extensions page
+				  <br/>(You can also open it by typing <i><a href="chrome://extensions">chrome://extensions</a></i> in the address bar)</li>
+				<li>Check the 'Developer Mode' on top right of the page</li>
+				<li>Click "Load unpacked extension..." button</li>
+				<li>Choose the 'Touken Ranbu Helper' folder you just unzipped before.<br />
+				<b style="color: red;"><i>Do not select any of the folders inside it.</i></b>
+			</ol>
+				<h5>Load on Firefox</h5>
+			<ol>
+				<li>Open Firefox</li>
+				<li>Open Firefox's menu and select "Add-ons" to open the add-ons manager </li>
+				  (You can also open it by pressing Ctrl+Shift+A OR typing <i><a href="about:addons">about:addons</a></i> in the address bar)
+				<li>Press the Tool button (the gear icon) and navigate to "Install Add-on From File..."</li>
+				<li>Either select the .zip folder you downloaded (the one for Firefox) or select the .xpi file</li>
+			</ol>
+				<h5>Use</h5>
+			<ol>
+				<li>Launch the Touken Ranbu web game</li>
+				<li>Open the Developer tools __before the game window loads__</li>
+					<ul>
+						<li>(Chrome: Ctrl+Shift+I OR F12 for Windows / Cmd+Opt+I for Mac)</li>
+						<li>(Firefox: Ctrl+Shift+C OR F12 for Windows / Cmd+Option+C for Mac)</li>
+					</ul>
+				<li>On the top row of developer tools, you'll see 'THR+' for the Lite version or '~ TRH ~' for the Full version. Click it.</li>
+					<ul><li>If you do not see 'THR+', press the double caret ```>>```.</li></ul>
+				<li>There is an option on the row to the far right, where the extension name is, to change the orientation:</li>
+					<ul>
+						<li>Chrome: Press the vetical elipsis, under 'Dock Side' select your orientation.</li>
+						<li>Firefox: Press the ellipsis, select your orientation.</li>
+					</ul>
+				<li>Use it!</li>
+			</ol>
+		</div>
+		<h3>For More Information</h3>
+		<p>Check the <a href="https://touken-ranbu.fandom.com/wiki/Touken_Ranbu_Helper">Touken-Ranbu Fandom Wiki</a> for guides, transaltions, pictures, 
+		and other helpful information useful for playing the game.</p>
+
+		<h4>Warnings</h4>
+		<ul>
+			<li>Chrome may display a screen on startup regarding the extension--ignore it. The notice is normal behavior. <br />It does this to every 
+			unpacked extension, as a safeguard against potentially malicious ones.</li>
+			<li>The extension will malfunction for every new sword/kiwame added to the game. Please update the extension accordingly.</li>
+		</ul>
+		
+		<h3>Support or Contact </h3>
+
+		Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.
+	</div>
+</body>
+</html>
