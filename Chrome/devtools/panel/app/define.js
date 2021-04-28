@@ -1989,6 +1989,127 @@
 		"area": 1,
 		"upgrade": 25,
 		"symbol": 10
+	},
+	"190": {
+		"name": "Taikou",
+		"id": 190,
+		"rarity": 1,
+		"type": 7,
+		"group": 6,
+		"equip": 1,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"191": {
+		"name": "Taikou K.",
+		"id": 191,
+		"rarity": 2,
+		"type": 7,
+		"group": 6,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 2
+	},
+	"192": {
+		"name": "Samidare",
+		"id": 192,
+		"rarity": 2,
+		"type": 5,
+		"group": 17,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"193": {
+		"name": "Samidare K.",
+		"id": 193,
+		"rarity": 3,
+		"type": 5,
+		"group": 17,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 4
+	},
+	"194": {
+		"name": "Oochidori",
+		"id": 194,
+		"rarity": 3,
+		"type": 6,
+		"group": 1,
+		"equip": 2,
+		"area": 4,
+		"upgrade": 25,
+		"symbol": 1
+	},
+	"195": {
+		"name": "Oochidori K.",
+		"id": 195,
+		"rarity": 4,
+		"type": 6,
+		"group": 1,
+		"equip": 3,
+		"area": 4,
+		"upgrade": 25,
+		"symbol": 7
+	},
+	"196": {
+		"name": "Hanjin",
+		"id": 196,
+		"rarity": 2,
+		"type": 4,
+		"group": 1,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"197": {
+		"name": "Hanjin K.",
+		"id": 197,
+		"rarity": 3,
+		"type": 4,
+		"group": 1,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 3
+	},
+	"198": {
+		"name": "Norimune",
+		"id": 198,
+		"rarity": 5,
+		"type": 2,
+		"group": 18,
+		"equip": 3,
+		"area": 1,
+		"upgrade": 25,
+		"symbol": 1
+	},
+	"200": {
+		"name": "Murakumo",
+		"id": 200,
+		"rarity": 2,
+		"type": 5,
+		"group": 17,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 1
+	},
+	"201": {
+		"name": "Murakumo K.",
+		"id": 201,
+		"rarity": 3,
+		"type": 5,
+		"group": 17,
+		"equip": 2,
+		"area": 1,
+		"upgrade": 20,
+		"symbol": 4
 	}
   };
   exports.tohken.define.equiptype = {
@@ -2282,6 +2403,11 @@
 	},
 	"11045": {
 		"name": "Horse Iwaigogou",
+		"soldier": 0,
+		"type": -1
+	},
+	"11046": {
+		"name": "Horse Iwairokugou",
 		"soldier": 0,
 		"type": -1
 	}
