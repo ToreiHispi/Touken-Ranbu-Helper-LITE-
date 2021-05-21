@@ -78,8 +78,8 @@
     })(this));
     this.data['sword']['data'] = branch;
     this.data['sword']['last_update'] = Date.now();
-	exports.tohken.parse.view.call(this, 'party');
-    return 'done';
+    exports.tohken.parse.view.call(this, 'party');
+      return 'done';
   };
   exports.tohken.parse.party = function(party) {
     if (!this.data['party']['filling']) {
@@ -278,11 +278,11 @@
       });
     }
 	//Rare/Uncommon Swords
-    rare = [7, 25, 55, 59, 65, 79, 118, 130, 132, 134, 138];
+    rare = [7, 11, 25, 55, 59, 65, 79, 118, 130, 132, 134, 138];
 	//Super Rare Swords
-    srare = [3, 5, 9, 11, 13, 15, 17, 31, 33, 35, 37, 43, 51, 53, 57, 63, 67, 69, 71, 77, 103, 105, 107, 112, 120, 124, 126, 136, 140, 144, 150];
+    srare = [3, 5, 9, 13, 15, 17, 31, 33, 35, 37, 43, 51, 53, 57, 63, 67, 69, 71, 77, 103, 105, 107, 112, 120, 124, 136, 140, 144, 150];
 	//Limited-Time/Event only Swords
-	ev = [21, 75, 142, 146, 148, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188];
+	ev = [21, 75, 142, 146, 148, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 200];
 	
     _.forEach(notify, (function(_this) {
       return function(n) {
@@ -729,7 +729,7 @@
     })(this));
     return 'done';
   };
-  exports.tohken.parse.upload = function(id, data) {
+  /*exports.tohken.parse.upload = function(id, data) {
     $.post("http://api.toulove.org", JSON.stringify({
       "sword": data['sword_id'],
       "charcoal": data['charcoal'],
@@ -772,7 +772,7 @@
       };
     })(this));
     return 'done';
-  };
+  };*/
   return exports.tohken.parse.fill = function(target, source) {
     _.forEach(target, function(vi, ki) {
       if (_.has(source, ki)) {

@@ -66,14 +66,15 @@
 					<span v-show="hp/hp_max&lt;=0.9 &amp;&amp; hp/hp_max&gt;0.65 &amp;&amp; status!=1" class="ssta y"> [Light]</span>
 					<span v-show="hp/hp_max&lt;=0.65 &amp;&amp; hp/hp_max&gt;0.3 &amp;&amp; status!=1" class="ssta o"> [Moderate]</span>
 					<span v-show="hp/hp_max&lt;=0.3&amp;&amp;status!=1" class="ssta r"> [Severe]</span></div>
-                    <div class="sf"><span v-class="r: fatigue &lt; 6,y: fatigue &gt;= 6 &amp;&amp; fatigue &lt; 20,p: fatigue &gt;= 50" class="sfico"></span>
+                    <div class="sf"><span v-class="r: fatigue &lt; 10,y: fatigue &gt;= 10 &amp;&amp; fatigue &lt; 20,p: fatigue &gt;= 50" class="sfico"></span>
 					<span v-show="fatigue &gt;= 50">Sakura </span>
 					<span v-show="fatigue &lt; 50 &amp;&amp; fatigue &gt;= 20">Normal </span>
 					<span v-show="fatigue &lt; 20">Fatigue </span>
-					<span>{{fatigue}}</span><span v-show="fatigue &gt;= 50">(+20%)</span><span v-show="fatigue &gt;= 6 &amp;&amp; fatigue &lt; 20">(-20%)</span><span v-show="fatigue &lt; 6">(-40%)</span></div>
+					<span>{{fatigue}}</span><span v-show="fatigue &gt;= 50">(+20%)</span><span v-show="fatigue &gt;= 10 &amp;&amp; fatigue &lt; 20">(-20%)</span><span v-show="fatigue &lt; 10">(-40%)</span></div>
                   </div>
                   <div class="c2">
-                    <div class="sequ"><span v-if="equip_serial_id1!=null" v-class="r: equip_1['level'] == 2, ur: equip_1['level'] == 0, b: equip_1['soldier_now'] == 0">[{{equip_1['sname']}} {{equip_1['soldier_now']}}/{{equip_1['soldier_max']}}]</span><span v-if="equip_serial_id1==null&amp;&amp;max_equip&gt;=1">[Empty]</span><span v-if="equip_serial_id2!=null" v-class="r: equip_2['level'] == 2, ur: equip_2['level'] == 0, b: equip_2['soldier_now'] == 0">[{{equip_2['sname']}} {{equip_2['soldier_now']}}/{{equip_2['soldier_max']}}]</span><span v-if="equip_serial_id2==null&amp;&amp;max_equip&gt;=2">[Empty]</span><span v-if="equip_serial_id3!=null" v-class="r: equip_3['level'] == 2, ur: equip_3['level'] == 0, b: equip_3['soldier_now'] == 0">[{{equip_3['sname']}} {{equip_3['soldier_now']}}/{{equip_3['soldier_max']}}]</span><span v-if="equip_serial_id3==null&amp;&amp;max_equip&gt;=3">[Empty]</span></div>
+                    <div class="sequ"><span v-if="equip_serial_id1!=null" v-class="r: equip_1['level'] == 2, ur: equip_1['level'] == 0, b: equip_1['soldier_now'] == 0">
+                      [{{equip_1['sname']}} {{equip_1['soldier_now']}}/{{equip_1['soldier_max']}}]</span><span v-if="equip_serial_id1==null&amp;&amp;max_equip&gt;=1">[Empty]</span><span v-if="equip_serial_id2!=null" v-class="r: equip_2['level'] == 2, ur: equip_2['level'] == 0, b: equip_2['soldier_now'] == 0">[{{equip_2['sname']}} {{equip_2['soldier_now']}}/{{equip_2['soldier_max']}}]</span><span v-if="equip_serial_id2==null&amp;&amp;max_equip&gt;=2">[Empty]</span><span v-if="equip_serial_id3!=null" v-class="r: equip_3['level'] == 2, ur: equip_3['level'] == 0, b: equip_3['soldier_now'] == 0">[{{equip_3['sname']}} {{equip_3['soldier_now']}}/{{equip_3['soldier_max']}}]</span><span v-if="equip_serial_id3==null&amp;&amp;max_equip&gt;=3">[Empty]</span></div>
                   </div>
                 </div>
               </li>
@@ -92,7 +93,7 @@
           </ul>
         </div>
         <div class="panel fr">
-          <div class="t">Smithing<span style="cursor: pointer;" v-on="click: toggleForge" class="alv">[Click to view prediction]</span></div>
+          <div class="t">Smithing<span style="cursor: pointer;" v-on="click: toggleForge" class="alv">[Click to view outcome]</span></div>
           <div class="amounts"><span class="alv">Workshop: <b>{{data['forge']['open']}}</b></span><span class="lva">In use: <b>{{checkout('forge')}}</b></span></div>
           <ul class="equ">
             <li v-repeat="data['forge']['data']">[{{finished_at | tt2lt}}] {{sword_id | fs2n}}</li>
@@ -218,7 +219,7 @@
             <li>
               <div class="act">Sword drop<span v-class="on: config.notify_getnew == 0" v-on="click: applyConfig('notify_getnew', 0)">OFF</span><span v-class="on: config.notify_getnew == 1" v-on="click: applyConfig('notify_getnew', 1)">Rare swords</span><span v-class="on: config.notify_getnew == 2" v-on="click: applyConfig('notify_getnew', 2)">S Rare swords</span><span v-class="on: config.notify_getnew == 3" v-on="click: applyConfig('notify_getnew', 3)">ALL</span></div>
               <div class="desc">Notifies when you get a drop.</div>
-              <div class="desc">*Rare swords: Tonbokiri, Otegine, Taroutachi, Jiroutachi, Ishikirimaru, R4 and R5 Tachis, & super rare swords.</div>
+              <div class="desc">*Rare swords: Imanotsurugi, Tonbokiri, Otegine, Taroutachi, Jiroutachi, Ishikirimaru, R4 and R5 Tachis, & super rare swords.</div>
               <div class="desc">*Super rare swords: Hirano, Atsushi, Mikazuki, Kogitsunemaru, Monoyoshi, Taikogane, Fudou, Kikkou, Akashi, Nihongou, Hotarumaru & Event special drops.</div>
             </li>
           </ul>
@@ -230,9 +231,9 @@
           <div class="t">Touken Ranbu Helper</div>
           <ul class="sl">
             <li>
-              <div class="desc">Version: V1.8.0 (LITE)</div>
-              <div class="desc">Build Time： Wed April 28 2020 14:40:00 GMT+0900 (Japan Standard Time)</div>
-              <div class="desc">Repository：<a href="https://github.com/ToreiHispi/touken-helper-LITE">GitHub Repo for TKRB Helper LITE</a></div>
+              <div class="desc">Version: V1.8.1 (LITE)</div>
+              <div class="desc">Build Time： Fri May 21 2021 22:55:00 GMT+0900 (Japan Standard Time)</div>
+              <div class="desc">Repository：<a href="https://github.com/ToreiHispi/Touken-Ranbu-Helper-LITE-">GitHub Repo for TKRB Helper LITE</a></div>
             </li>
           </ul>
         </div>
@@ -282,6 +283,10 @@
         <div class="panel-about">
           <div class="t">Change Log</div>
           <ul class="sl">
+      <li>
+              <div class="act">v1.8.1 20210521</div>
+			  <div class="desc">Small fixes and added compatibility with Johren site for EN version of game.</div>
+            </li>
       <li>
               <div class="act">v1.8.0 20210428</div>
 			  <div class="desc">Added new swords: Taikou Samonji, Samidare Gou, Oochidori Juumonji Yari, Hanjin, Ichimonji Norimune, Murakumo Gou.</div>

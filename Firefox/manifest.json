@@ -1,7 +1,7 @@
 {
   "name": "Touken Ranbu Helper (LITE)",
   "manifest_version": 2,
-  "version": "1.8.0",
+  "version": "1.8.1",
   "devtools_page": "devtools/devtools.html",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
   "web_accessible_resources": ["*",	"assets/icon.png"],
@@ -13,7 +13,9 @@
   },
   "permissions": [
     "*://pc-play.games.dmm.com/play/tohken/*",
+    "*://*.johren.net/games/tohken-en/play/*",
     "*://*.touken-ranbu.jp/*",
+    "*://*.touken.johren.net/*",
     "notifications",
     "alarms",
     "tabs"
