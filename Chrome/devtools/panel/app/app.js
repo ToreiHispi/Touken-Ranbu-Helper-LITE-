@@ -6,7 +6,7 @@
   return exports.tohken.control = new Vue({
     el: '#app',
     data: {
-      version: '1.8.1',
+      version: '1.8.2',
       gaming: false,
       tab: 2,
       data: exports.tohken.data,

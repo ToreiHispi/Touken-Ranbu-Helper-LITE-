@@ -261,7 +261,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"27": {
 		"name": "Namazuo",
@@ -580,7 +580,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"57": {
 		"name": "Akashi",
@@ -800,7 +800,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"77": {
 		"name": "Koryuu",
@@ -822,7 +822,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"79": {
 		"name": "Kousetsu",
@@ -844,7 +844,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"81": {
 		"name": "Souza",
@@ -1185,7 +1185,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 75,
-		"symbol": 10
+		"symbol": 9
 	},
 	"112": {
 		"name": "Hizamaru",
@@ -1229,7 +1229,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 50,
-		"symbol": 10
+		"symbol": 9
 	},
 	"116": {
 		"name": "Ookurikara",
@@ -1372,7 +1372,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"132": {
 		"name": "Taroutachi",
@@ -1922,7 +1922,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"184": {
 		"name": "Jizou",
@@ -1988,7 +1988,7 @@
 		"equip": 3,
 		"area": 1,
 		"upgrade": 25,
-		"symbol": 10
+		"symbol": 9
 	},
 	"190": {
 		"name": "Taikou",
