@@ -2110,6 +2110,28 @@
 		"area": 1,
 		"upgrade": 20,
 		"symbol": 4
+	},
+	"202": {
+		"name": "Himetsuru",
+		"id": 202,
+		"rarity": 4,
+		"type": 2,
+		"group": 18,
+		"equip": 3,
+		"area": 1,
+		"upgrade": 25,
+		"symbol": 1
+	},
+	"203": {
+		"name": "Himetsuru K.",
+		"id": 203,
+		"rarity": 5,
+		"type": 2,
+		"group": 18,
+		"equip": 3,
+		"area": 1,
+		"upgrade": 25,
+		"symbol": 9
 	}
   };
   exports.tohken.define.equiptype = {

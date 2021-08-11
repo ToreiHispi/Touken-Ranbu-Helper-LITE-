@@ -1,7 +1,7 @@
 {
   "name": "Touken Ranbu Helper (LITE)",
   "manifest_version": 2,
-  "version": "1.8.2",
+  "version": "1.8.3",
   "devtools_page": "devtools/devtools.html",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
   "web_accessible_resources": ["*",	"assets/icon.png"],
